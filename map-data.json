@@ -1,0 +1,253 @@
+{
+    "autumn.entrance": {
+        "disabledEvents": ["EndScene"],
+        "connections": [{
+            "markers": ["left", "right"],
+            "exits": [
+                ["autumn.path-1", "right"],
+                ["rookie-harbor.west", "left", "disabled"]
+            ],
+            "chests": [112]
+        }] 
+    },
+    "autumn.path-1": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["up", "bottom", "left", "right"],
+            "exits": [
+                ["autumn.cubaum", "down"],
+                ["autumn.path-1-1", "top"],
+                ["autumn.path-2", "right"],
+                ["autumn.entrance", "left"]
+            ],
+            "chests": []
+        }] 
+    },
+    "autumn.path-1-1": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["top", "left", "left-2"],
+            "exits": [
+                ["autumn.path-1", "bottom"],
+                ["autumn.path-1-2", "right"],
+                ["autumn.path-1-2", "right-2"]
+            ],
+            "chests": []
+        }] 
+    },
+    "autumn.path-1-2": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["left", "right", "right-2"],
+            "exits": [
+                ["autumn.path-1-1", "left"],
+                ["autumn.path-1-1", "left-2"],
+                ["autumn.path-1-3", "right"]
+            ],
+            "chests": []
+        }] 
+    },
+    "autumn.path-1-3": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["right"],
+            "exits": [
+                ["autumn.path-1-2", "left"]
+            ],
+            "chests": []
+        }] 
+    },
+    "autumn.path-2": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["right", "left-1", "left-2", "left-4"],
+            "exits": [
+                ["autumn.path-1", "left"],
+                ["autumn.path-3-1", "right"],
+                ["autumn.path-3-1", "right-2", "JADC"],
+                ["autumn.path-3-2", "right"]
+            ],
+            "chests": [268]
+        }] 
+    },
+    "autumn.path-3-1": {
+        "disabledEvents": ["FinalGetTogether"],
+        "connections": [{
+            "markers": ["right", "right-2", "left", "left-2"],
+            "exits": [
+                ["autumn.path-2", "left-1"],
+                ["autumn.path-2", "left-3"],
+                ["autumn.path4", "right-1"],
+                ["autumn.path4", "right-2"]
+            ],
+            "chests": []
+        }] 
+    },
+    "autumn.path-3-2": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["right", "left"],
+            "exits": [
+                ["autumn.path-2", "left-2"],
+                ["autumn.path-3-4", "right"]
+            ],
+            "chests": [305]
+        }] 
+    },
+    "autumn.path-3-4": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["top", "right", "left"],
+            "exits": [
+                ["autumn.path-3-2", "left"],
+                ["autumn.path4", "bottom"],
+                ["autumn.caves.cave-3-to-6", "right"]
+            ],
+            "chests": []
+        }] 
+    },
+    "autumn.path4": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["right-1", "bottom", "west"],
+            "exits": [
+                ["autumn.path-3-1", "left"],
+                ["autumn.path-3-4", "top"],
+                ["autumn.path5", "east"]
+            ],
+            "chests": []
+        }] 
+    },
+    "autumn.path5": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["east", "north", "west", "right-cave"],
+            "exits": [
+                ["autumn.path4", "west"],
+                ["autumn.path6", "south"],
+                ["autumn.lake-observatory", "east"],
+                ["autumn.caves.cave-3-to-6", "left"]
+            ],
+            "chests": [3, 4]
+        }] 
+    },
+    "autumn.path6": {
+        "disabledEvents": ["BarrierBlock"],
+        "connections": [{
+            "markers": ["south", "west", "meerkat-cave"],
+            "exits": [
+                ["autumn.cave-path6-1-meerkat", "exit"],
+                ["autumn.path5", "north"],
+                ["autumn.path-7-1", "east"]
+            ],
+            "chests": [13, 15]
+        }] 
+    },
+    "autumn.path-7-1": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["east", "top"],
+            "exits": [
+                ["autumn.path-7-2", "bottom"],
+                ["autumn.path6", "west"]
+            ],
+            "chests": []
+        }, {
+            "markers": ["top-2"],
+            "exits": [
+                ["autumn.path-7-2", "bottom"],
+                ["autumn.path6", "west"],
+                ["autumn.path-7-2", "bottom-2", "maybe"],
+                ["autumn.path-7-2", "bottom-3", "maybe"]
+            ],
+            "chests": [{"id": 283, "tags": ["maybe"]}, {"id": 284, "tags": ["maybe"]}, {"id": 1128, "tags": ["maybe"]}]
+        }, {
+            "markers": ["top-3"],
+            "exits": [
+                ["autumn.path-7-2", "bottom"],
+                ["autumn.path6", "west"],
+                ["autumn.path-7-2", "bottom-2", "maybe", "JADC"],
+                ["autumn.path-7-2", "bottom-3", "maybe"]
+            ],
+            "chests": [{"id": 283, "tags": ["maybe", "JADC"]}, {"id": 284, "tags": ["maybe"]}, {"id": 1128, "tags": ["maybe", "JADC"]}]
+        }] 
+    },
+    "autumn.path-7-2": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["bottom", "bottom-2", "north"],
+            "exits": [
+                ["autumn.path-8", "bottom"],
+                ["autumn.path-7-1", "top"],
+                ["autumn.path-7-1", "top-2"]
+            ],
+            "chests": []
+        }, {
+            "markers": ["bottom-3"],
+            "exits": [
+                ["autumn.path-8", "bottom"],
+                ["autumn.path-7-1", "top"],
+                ["autumn.path-7-1", "top-2"],
+                ["autumn.path-7-1", "top-3", "maybe"]
+            ],
+            "chests": [{"id": 1115, "tags": ["maybe"]}, {"id": 1142, "tags": ["maybe"]}]
+        }] 
+    },
+    "autumn.path-8": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["bottom", "top"],
+            "exits": [
+                ["bergen-trail.path-1-entrance", "south-exit_autumn", "disabled"],
+                ["autumn.path-7-2", "north"]
+            ],
+            "chests": [12]
+        }] 
+    },
+    "autumn.cave-path6-1-meerkat": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["exit"],
+            "exits": [
+                ["autumn.path6", "meerkat-cave"]
+            ],
+            "chests": []
+        }] 
+    },
+    "autumn.cubaum": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["down"],
+            "exits": [
+                ["autumn.path-1", "up"]
+            ],
+            "chests": [200, 201]
+        }] 
+    },
+    "autumn.lake-observatory": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["east"],
+            "exits": [
+                ["autumn.path5", "west"]
+            ],
+            "chests": [329]
+        }] 
+    },
+    "autumn.cave-3-to-6": {
+        "disabledEvents": [],
+        "connections": [{
+            "markers": ["left"],
+            "exits": [
+                ["autumn.path5", "right-cave"]
+            ],
+            "chests": []
+        }, {
+            "markers": ["right"],
+            "exits": [
+                ["autumn.path-3-4", "left"]
+            ],
+            "chests": []
+        }] 
+    }
+}

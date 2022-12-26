@@ -1,0 +1,5 @@
+{
+    "id": "project-rando",
+    "name": "Project Rando",
+    "plugin": "plugin.js"
+}

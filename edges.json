@@ -1,0 +1,3750 @@
+{
+    "arid.test2": {
+        "": {
+            "map": "arid.test",
+            "marker": "door1"
+        }
+    },
+    "autumn.cave-path6-1-meerkat": {
+        "exit": {
+            "map": "autumn.path6",
+            "marker": "meerkat-cave"
+        }
+    },
+    "autumn.cubaum": {
+        "down": {
+            "map": "autumn.path-1",
+            "marker": "up"
+        },
+        "top": {
+            "map": "autumn-fall.path-07",
+            "marker": "bottom"
+        }
+    },
+    "autumn.entrance": {
+        "left": {
+            "map": "autumn.path-1",
+            "marker": "right"
+        },
+        "right": {
+            "map": "rookie-harbor.west",
+            "marker": "left"
+        }
+    },
+    "autumn.path-1-1": {
+        "top": {
+            "map": "autumn.path-1",
+            "marker": "bottom"
+        },
+        "left": {
+            "map": "autumn.path-1-2",
+            "marker": "right"
+        },
+        "left-2": {
+            "map": "autumn.path-1-2",
+            "marker": "right-2"
+        }
+    },
+    "autumn.path-1-2": {
+        "right": {
+            "map": "autumn.path-1-1",
+            "marker": "left"
+        },
+        "right-2": {
+            "map": "autumn.path-1-1",
+            "marker": "left-2"
+        },
+        "left": {
+            "map": "autumn.path-1-3",
+            "marker": "right"
+        }
+    },
+    "autumn.lake-observatory": {
+        "east": {
+            "map": "autumn.path5",
+            "marker": "west"
+        }
+    },
+    "autumn.path-1-3": {
+        "right": {
+            "map": "autumn.path-1-2",
+            "marker": "left"
+        }
+    },
+    "autumn.path-1": {
+        "right": {
+            "map": "autumn.entrance",
+            "marker": "left"
+        },
+        "left": {
+            "map": "autumn.path-2",
+            "marker": "right"
+        },
+        "up": {
+            "map": "autumn.cubaum",
+            "marker": "down"
+        },
+        "bottom": {
+            "map": "autumn.path-1-1",
+            "marker": "top"
+        }
+    },
+    "autumn.path-3-2": {
+        "right": {
+            "map": "autumn.path-2",
+            "marker": "left-2"
+        },
+        "left": {
+            "map": "autumn.path-3-4",
+            "marker": "right"
+        }
+    },
+    "autumn.path-2": {
+        "right": {
+            "map": "autumn.path-1",
+            "marker": "left"
+        },
+        "left-2": {
+            "map": "autumn.path-3-2",
+            "marker": "right"
+        },
+        "left-1": {
+            "map": "autumn.path-3-1",
+            "marker": "right"
+        },
+        "left-3": {
+            "map": "autumn.path-3-1",
+            "marker": "right-2"
+        },
+        "left-4": {
+            "map": "autumn.path-3-1",
+            "marker": "right-3"
+        }
+    },
+    "autumn.path-3-4": {
+        "right": {
+            "map": "autumn.path-3-2",
+            "marker": "left"
+        },
+        "top": {
+            "map": "autumn.path4",
+            "marker": "bottom"
+        },
+        "left": {
+            "map": "autumn.caves.cave-3-to-6",
+            "marker": "right"
+        }
+    },
+    "autumn.path-3-1": {
+        "left": {
+            "map": "autumn.path4",
+            "marker": "right-1"
+        },
+        "right": {
+            "map": "autumn.path-2",
+            "marker": "left-1"
+        },
+        "left-2": {
+            "map": "autumn.path4",
+            "marker": "right-2"
+        },
+        "right-2": {
+            "map": "autumn.path-2",
+            "marker": "left-3"
+        },
+        "right-3": {
+            "map": "autumn.path-2",
+            "marker": "left-4"
+        },
+        "top": {
+            "map": "autumn.guild.entrance",
+            "marker": "bottom"
+        }
+    },
+    "autumn.path-8": {
+        "bottom": {
+            "map": "autumn.path-7-2",
+            "marker": "north"
+        },
+        "top": {
+            "map": "bergen-trail.path-1-entrance",
+            "marker": "south-exit_autumn"
+        }
+    },
+    "autumn.path5": {
+        "east": {
+            "map": "autumn.path4",
+            "marker": "west"
+        },
+        "west": {
+            "map": "autumn.lake-observatory",
+            "marker": "east"
+        },
+        "north": {
+            "map": "autumn.path6",
+            "marker": "south"
+        },
+        "right-cave": {
+            "map": "autumn.caves.cave-3-to-6",
+            "marker": "left"
+        }
+    },
+    "autumn.test": {
+        "end": {
+            "map": "autumn.test",
+            "marker": "start"
+        },
+        "start": {
+            "map": "autumn.test",
+            "marker": "end"
+        }
+    },
+    "autumn-fall.path-01": {
+        "bottom": {
+            "map": "rookie-harbor.east",
+            "marker": "north"
+        },
+        "top": {
+            "map": "autumn-fall.path-02",
+            "marker": "bottom"
+        }
+    },
+    "autumn-fall.path-03": {
+        "left-1": {
+            "map": "autumn-fall.path-02",
+            "marker": "right"
+        },
+        "left-2": {
+            "map": "autumn-fall.path-02",
+            "marker": "right-2"
+        },
+        "top-1": {
+            "map": "autumn-fall.path-08",
+            "marker": "bottom-1"
+        },
+        "right-1": {
+            "map": "autumn-fall.caves.path-03-exit",
+            "marker": "left-1"
+        }
+    },
+    "autumn-fall.path-05": {
+        "bottom": {
+            "map": "autumn-fall.path-04",
+            "marker": "top"
+        },
+        "top": {
+            "map": "jungle.path-01-entrance",
+            "marker": "bottom"
+        },
+        "right-1": {
+            "map": "autumn-fall.path-09",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "autumn-fall.path-09",
+            "marker": "left-2"
+        }
+    },
+    "autumn-fall.path-06": {
+        "right-1": {
+            "map": "autumn-fall.path-04",
+            "marker": "left-1"
+        },
+        "bottom": {
+            "map": "autumn-fall.path-07",
+            "marker": "top"
+        },
+        "bottom-2": {
+            "map": "autumn-fall.path-07",
+            "marker": "top-2"
+        },
+        "bottom-3": {
+            "map": "autumn-fall.path-07",
+            "marker": "top-3"
+        },
+        "left": {
+            "map": "autumn-fall.path-10",
+            "marker": "right"
+        }
+    },
+    "autumn-fall.path-08": {
+        "bottom-1": {
+            "map": "autumn-fall.path-03",
+            "marker": "top-1"
+        },
+        "left-1": {
+            "map": "autumn-fall.path-09",
+            "marker": "right-1"
+        },
+        "bullCave": {
+            "map": "autumn-fall.caves.buffelcave-1",
+            "marker": "exit"
+        }
+    },
+    "autumn-fall.path-10": {
+        "right": {
+            "map": "autumn-fall.path-06",
+            "marker": "left"
+        }
+    },
+    "bergen.elevator": {
+        "right-1": {
+            "map": "bergen.bergen2",
+            "marker": "left"
+        },
+        "right-2": {
+            "map": "bergen.bergen2",
+            "marker": "left-2"
+        }
+    },
+    "bergen.guild-1": {
+        "stairs": {
+            "map": "bergen.interior.guild-basement",
+            "marker": "stairs"
+        }
+    },
+    "bergen.karotto-cave": {
+        "bottomt": {
+            "map": "bergen.bergen",
+            "marker": "top-5"
+        }
+    },
+    "bergen.mine-entrance": {
+        "south": {
+            "map": "bergen.bergen2",
+            "marker": "top"
+        },
+        "top": {
+            "map": "cold-dng.g.center",
+            "marker": "south"
+        }
+    },
+    "bergen-trail.path-2": {
+        "south": {
+            "map": "bergen-trail.path-1-entrance",
+            "marker": "north"
+        },
+        "west": {
+            "map": "bergen-trail.path-3-1",
+            "marker": "east"
+        },
+        "north": {
+            "map": "bergen-trail.path-4-1",
+            "marker": "south"
+        }
+    },
+    "bergen-trail.path-3-1": {
+        "east": {
+            "map": "bergen-trail.path-2",
+            "marker": "west"
+        },
+        "west": {
+            "map": "bergen-trail.path-3-2",
+            "marker": "east"
+        }
+    },
+    "bergen-trail.path-3-2": {
+        "east": {
+            "map": "bergen-trail.path-3-1",
+            "marker": "west"
+        },
+        "north": {
+            "map": "bergen-trail.path-3-3",
+            "marker": "south"
+        }
+    },
+    "bergen-trail.path-4-1": {
+        "south": {
+            "map": "bergen-trail.path-2",
+            "marker": "north"
+        },
+        "east": {
+            "map": "bergen-trail.path-4-1-1",
+            "marker": "west"
+        },
+        "north": {
+            "map": "bergen-trail.path-4-2",
+            "marker": "south1"
+        }
+    },
+    "bergen-trail.path-6-1": {
+        "right": {
+            "map": "bergen-trail.path-6",
+            "marker": "left-1"
+        },
+        "cave": {
+            "map": "bergen-trail.cave.cave-6-1",
+            "marker": "bottom"
+        }
+    },
+    "bergen-trail.path-7-2-1": {
+        "left": {
+            "map": "bergen-trail.path-7-2",
+            "marker": "right"
+        }
+    },
+    "cold-dng.test": {
+        "bombWall": {
+            "map": "cold-dng.test",
+            "marker": "bombWall"
+        },
+        "bombWall2": {
+            "map": "cold-dng.test",
+            "marker": "bombWall"
+        }
+    },
+    "forest.path-01-entrance": {
+        "left-1": {
+            "map": "forest.caves.path-01-entrance",
+            "marker": "right-1"
+        },
+        "right-1": {
+            "map": "forest.path-02",
+            "marker": "left-1"
+        }
+    },
+    "forest.path-04-vaga": {
+        "top-1": {
+            "map": "forest.path-04-hostel",
+            "marker": "botom-1"
+        },
+        "top-2": {
+            "map": "forest.path-04-hostel",
+            "marker": "botom-2"
+        },
+        "right": {
+            "map": "forest.path-13",
+            "marker": "left"
+        }
+    },
+    "forest.path-10-hidden": {
+        "left-1": {
+            "map": "forest.path-10",
+            "marker": "right-1"
+        },
+        "cave-1": {
+            "map": "forest.caves.exit-cave-01",
+            "marker": "entrance"
+        }
+    },
+    "forest.path-11": {
+        "bottom-1": {
+            "map": "forest.caves.path-08-to-10",
+            "marker": "top-1"
+        },
+        "top-1": {
+            "map": "forest.caves.path-11-to-12",
+            "marker": "bottom-1"
+        }
+    },
+    "forest.path-11-behind-maze": {
+        "bottom-1": {
+            "map": "forest.caves.path-11-maze",
+            "marker": "top-1"
+        }
+    },
+    "heat.path-01-entrance": {
+        "right": {
+            "map": "heat.path-00",
+            "marker": "left-1"
+        },
+        "left": {
+            "map": "heat.path-02",
+            "marker": "right"
+        }
+    },
+    "heat.path-00": {
+        "left-1": {
+            "map": "heat.path-01-entrance",
+            "marker": "right"
+        }
+    },
+    "heat.path-02": {
+        "right": {
+            "map": "heat.path-01-entrance",
+            "marker": "left"
+        },
+        "bottom": {
+            "map": "heat.path-03",
+            "marker": "top"
+        },
+        "bottom-2": {
+            "map": "heat.path-03",
+            "marker": "top-2"
+        },
+        "left-1": {
+            "map": "heat.shortcut-02-09",
+            "marker": "right-1"
+        }
+    },
+    "heat.path-03": {
+        "top": {
+            "map": "heat.path-02",
+            "marker": "bottom"
+        },
+        "top-2": {
+            "map": "heat.path-02",
+            "marker": "bottom-2"
+        },
+        "left": {
+            "map": "heat.path-06",
+            "marker": "right"
+        },
+        "left-2": {
+            "map": "heat.path-06",
+            "marker": "right-2"
+        },
+        "right": {
+            "map": "heat.oasis.oasis-path-01",
+            "marker": "left"
+        },
+        "left-3": {
+            "map": "heat.path-06",
+            "marker": "right-3"
+        },
+        "bottom-1": {
+            "map": "heat.path-04",
+            "marker": "top"
+        },
+        "bottom-2": {
+            "map": "heat.path-04",
+            "marker": "top-2"
+        },
+        "bottom-3": {
+            "map": "heat.path-04",
+            "marker": "top-3"
+        }
+    },
+    "heat.path-04": {
+        "top": {
+            "map": "heat.path-03",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "heat.path-03",
+            "marker": "bottom-2"
+        },
+        "top-3": {
+            "map": "heat.path-03",
+            "marker": "bottom-3"
+        },
+        "left": {
+            "map": "heat.path-05",
+            "marker": "right-1"
+        },
+        "bottom": {
+            "map": "heat.oasis.oasis-path-03",
+            "marker": "top-2"
+        },
+        "left-2": {
+            "map": "heat.path-05",
+            "marker": "right-2"
+        }
+    },
+    "heat.path-07": {
+        "right-2": {
+            "map": "heat.path-06",
+            "marker": "left-1"
+        },
+        "right-1": {
+            "map": "heat.path-05",
+            "marker": "left-1"
+        },
+        "bottom": {
+            "map": "heat.cliffs.cliffs-path-01",
+            "marker": "top"
+        },
+        "top": {
+            "map": "heat.path-08",
+            "marker": "bottom"
+        }
+    },
+    "heat.path-06": {
+        "bottom-1": {
+            "map": "heat.path-05",
+            "marker": "top-1"
+        },
+        "right": {
+            "map": "heat.path-03",
+            "marker": "left"
+        },
+        "right-2": {
+            "map": "heat.path-03",
+            "marker": "left-2"
+        },
+        "bottom-2": {
+            "map": "heat.path-05",
+            "marker": "top-2"
+        },
+        "right-3": {
+            "map": "heat.path-03",
+            "marker": "left-3"
+        },
+        "left-1": {
+            "map": "heat.path-07",
+            "marker": "right-2"
+        }
+    },
+    "heat.path-08": {
+        "bottom": {
+            "map": "heat.path-07",
+            "marker": "top"
+        },
+        "top-1": {
+            "map": "heat.path-09",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "heat.path-09",
+            "marker": "bottom-2"
+        }
+    },
+    "heat.path-10": {
+        "right-1": {
+            "map": "heat.path-09",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "heat.path-09",
+            "marker": "left-2"
+        },
+        "left-1": {
+            "map": "heat.path-11",
+            "marker": "right"
+        }
+    },
+    "heat.path-09": {
+        "bottom-1": {
+            "map": "heat.path-08",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "heat.path-08",
+            "marker": "top-2"
+        },
+        "left-1": {
+            "map": "heat.path-10",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "heat.path-10",
+            "marker": "right-2"
+        },
+        "right-1": {
+            "map": "heat.shortcut-02-09",
+            "marker": "left-1"
+        },
+        "entrance-questCave": {
+            "map": "heat.special.heatadv-questcave-2",
+            "marker": "exit"
+        }
+    },
+    "heat.path-11": {
+        "right": {
+            "map": "heat.path-10",
+            "marker": "left-1"
+        },
+        "bottom": {
+            "map": "heat-village.baki-1",
+            "marker": "top"
+        },
+        "entranceGuardCave": {
+            "map": "heat.special.guards-billstonLair-1",
+            "marker": "exit"
+        }
+    },
+    "heat.shortcut-02-09": {
+        "left-1": {
+            "map": "heat.path-09",
+            "marker": "right-1"
+        },
+        "right-1": {
+            "map": "heat.path-02",
+            "marker": "left-1"
+        }
+    },
+    "jungle-city.west": {
+        "right-1": {
+            "map": "jungle-city.center",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "jungle-city.center",
+            "marker": "left-2"
+        },
+        "": {
+            "map": "jungle-city.center",
+            "marker": "left-2"
+        }
+    },
+    "hideout.entrance": {
+        "top": {
+            "map": "hideout.path-1",
+            "marker": "bottom"
+        }
+    },
+    "hideout.path-1": {
+        "bottom": {
+            "map": "hideout.entrance",
+            "marker": "top"
+        },
+        "right": {
+            "map": "hideout.path-2",
+            "marker": "left"
+        }
+    },
+    "hideout.path-2": {
+        "left": {
+            "map": "hideout.path-1",
+            "marker": "right"
+        },
+        "top": {
+            "map": "hideout.path-3",
+            "marker": "bottom"
+        }
+    },
+    "rhombus-sqr.center-s": {
+        "bottom-1": {
+            "map": "rhombus-sqr.residential-s1",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "rhombus-sqr.residential-s1",
+            "marker": "top-2"
+        },
+        "left-1": {
+            "map": "rhombus-sqr.center-sw",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "rhombus-sqr.center-sw",
+            "marker": "right-2"
+        },
+        "top-1": {
+            "map": "rhombus-sqr.arena-1",
+            "marker": "bottom-1"
+        },
+        "right-1": {
+            "map": "rhombus-sqr.center-se",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "rhombus-sqr.center-se",
+            "marker": "left-2"
+        },
+        "right-3": {
+            "map": "rhombus-sqr.center-se",
+            "marker": "left-3"
+        },
+        "left-3": {
+            "map": "rhombus-sqr.center-sw",
+            "marker": "right-3"
+        }
+    },
+    "rhombus-sqr.central": {
+        "innerDoor": {
+            "map": "rhombus-sqr.central-inner",
+            "marker": "cityExit"
+        }
+    },
+    "rhombus-sqr.central-inner": {
+        "cityExit": {
+            "map": "rhombus-sqr.central",
+            "marker": "innerDoor"
+        }
+    },
+    "rookie-harbor.north": {
+        "bottom1": {
+            "map": "rookie-harbor.center",
+            "marker": "top1"
+        },
+        "bottom2": {
+            "map": "rookie-harbor.center",
+            "marker": "top2"
+        }
+    },
+    "rookie-harbor.north2": {
+        "bottom1": {
+            "map": "rookie-harbor.center",
+            "marker": "top1"
+        },
+        "bottom2": {
+            "map": "rookie-harbor.center",
+            "marker": "top2"
+        }
+    },
+    "rookie-harbor.south": {
+        "top": {
+            "map": "rookie-harbor.center",
+            "marker": "bottom"
+        },
+        "top2": {
+            "map": "rookie-harbor.center",
+            "marker": "bottom2"
+        },
+        "bottom": {
+            "map": "rookie-harbor.teleporter",
+            "marker": "exit"
+        }
+    },
+    "arid.cliff-1": {
+        "east-1": {
+            "map": "arid.lake-1",
+            "marker": "west-1"
+        },
+        "south-1": {
+            "map": "arid.river-2",
+            "marker": "north-1"
+        }
+    },
+    "arid.forest-1": {
+        "south-1": {
+            "map": "arid.lake-1",
+            "marker": "north-1"
+        }
+    },
+    "arid.river-1": {
+        "north-1": {
+            "map": "arid.town-2",
+            "marker": "south-1"
+        },
+        "north-2": {
+            "map": "arid.lake-1",
+            "marker": "south-1"
+        },
+        "west-1": {
+            "map": "arid.river-2",
+            "marker": "east-1"
+        }
+    },
+    "arid.river-2": {
+        "east-1": {
+            "map": "arid.river-1",
+            "marker": "west-1"
+        },
+        "north-1": {
+            "map": "arid.cliff-1",
+            "marker": "south-1"
+        }
+    },
+    "arid.lake-1": {
+        "south-1": {
+            "map": "arid.river-1",
+            "marker": "north-2"
+        },
+        "east-1": {
+            "map": "arid.town-2",
+            "marker": "west-1"
+        },
+        "west-1": {
+            "map": "arid.cliff-1",
+            "marker": "east-1"
+        },
+        "north-1": {
+            "map": "arid.forest-1",
+            "marker": "south-1"
+        }
+    },
+    "arid.town-1": {
+        "west-1": {
+            "map": "arid.town-2",
+            "marker": "east-1"
+        },
+        "west-2": {
+            "map": "arid.town-2",
+            "marker": "east-2"
+        },
+        "north-1": {
+            "map": "arid.tower-1",
+            "marker": "south-1"
+        },
+        "north-2": {
+            "map": "arid.tower-1",
+            "marker": "south-2"
+        }
+    },
+    "arid.tower-1": {
+        "south-1": {
+            "map": "arid.town-1",
+            "marker": "north-1"
+        },
+        "south-2": {
+            "map": "arid.town-1",
+            "marker": "north-2"
+        },
+        "towerEntrance": {
+            "map": "arid-dng.second.f0.entrance",
+            "marker": "entrance"
+        }
+    },
+    "arid.town-2": {
+        "east-1": {
+            "map": "arid.town-1",
+            "marker": "west-1"
+        },
+        "east-2": {
+            "map": "arid.town-1",
+            "marker": "west-2"
+        },
+        "south-1": {
+            "map": "arid.river-1",
+            "marker": "north-1"
+        },
+        "west-1": {
+            "map": "arid.lake-1",
+            "marker": "east-1"
+        }
+    },
+    "autumn.path-7-2": {
+        "bottom": {
+            "map": "autumn.path-7-1",
+            "marker": "top"
+        },
+        "bottom-3": {
+            "map": "autumn.path-7-1",
+            "marker": "top-3"
+        },
+        "bottom-2": {
+            "map": "autumn.path-7-1",
+            "marker": "top-2"
+        },
+        "north": {
+            "map": "autumn.path-8",
+            "marker": "bottom"
+        }
+    },
+    "autumn.path-7-1": {
+        "east": {
+            "map": "autumn.path6",
+            "marker": "west"
+        },
+        "top": {
+            "map": "autumn.path-7-2",
+            "marker": "bottom"
+        },
+        "top-2": {
+            "map": "autumn.path-7-2",
+            "marker": "bottom-2"
+        },
+        "top-3": {
+            "map": "autumn.path-7-2",
+            "marker": "bottom-3"
+        }
+    },
+    "autumn.path4": {
+        "right-1": {
+            "map": "autumn.path-3-1",
+            "marker": "left"
+        },
+        "right-2": {
+            "map": "autumn.path-3-1",
+            "marker": "left-2"
+        },
+        "bottom": {
+            "map": "autumn.path-3-4",
+            "marker": "top"
+        },
+        "west": {
+            "map": "autumn.path5",
+            "marker": "east"
+        }
+    },
+    "autumn-fall.path-02": {
+        "bottom": {
+            "map": "autumn-fall.path-01",
+            "marker": "top"
+        },
+        "right": {
+            "map": "autumn-fall.path-03",
+            "marker": "left-1"
+        },
+        "left-1": {
+            "map": "autumn-fall.path-04",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "autumn-fall.path-04",
+            "marker": "right-2"
+        },
+        "right-2": {
+            "map": "autumn-fall.path-03",
+            "marker": "left-2"
+        }
+    },
+    "autumn.path6": {
+        "south": {
+            "map": "autumn.path5",
+            "marker": "north"
+        },
+        "west": {
+            "map": "autumn.path-7-1",
+            "marker": "east"
+        },
+        "meerkat-cave": {
+            "map": "autumn.cave-path6-1-meerkat",
+            "marker": "exit"
+        },
+        "top": {
+            "map": "evo-village.entrance",
+            "marker": "bottom"
+        }
+    },
+    "autumn-fall.path-07": {
+        "top": {
+            "map": "autumn-fall.path-06",
+            "marker": "bottom"
+        },
+        "bottom": {
+            "map": "autumn.cubaum",
+            "marker": "top"
+        },
+        "top-2": {
+            "map": "autumn-fall.path-06",
+            "marker": "bottom-2"
+        },
+        "top-3": {
+            "map": "autumn-fall.path-06",
+            "marker": "bottom-3"
+        }
+    },
+    "autumn-fall.path-04": {
+        "right-1": {
+            "map": "autumn-fall.path-02",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "autumn-fall.path-02",
+            "marker": "left-2"
+        },
+        "top": {
+            "map": "autumn-fall.path-05",
+            "marker": "bottom"
+        },
+        "left-1": {
+            "map": "autumn-fall.path-06",
+            "marker": "right-1"
+        },
+        "cave": {
+            "map": "autumn-fall.caves.path-04-cave-01",
+            "marker": "start"
+        }
+    },
+    "autumn-fall.path-09": {
+        "right-1": {
+            "map": "autumn-fall.path-08",
+            "marker": "left-1"
+        },
+        "left-1": {
+            "map": "autumn-fall.path-05",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "autumn-fall.path-05",
+            "marker": "right-2"
+        }
+    },
+    "bergen-trail.path-4-1-1": {
+        "west": {
+            "map": "bergen-trail.path-4-1",
+            "marker": "east"
+        },
+        "north": {
+            "map": "bergen-trail.path-4-2",
+            "marker": "south2"
+        },
+        "cave": {
+            "map": "bergen-trail.cave.cave-4-1-1",
+            "marker": "bottom"
+        }
+    },
+    "bergen-trail.path-3-3": {
+        "south": {
+            "map": "bergen-trail.path-3-2",
+            "marker": "north"
+        },
+        "east": {
+            "map": "bergen-trail.path-5",
+            "marker": "west"
+        }
+    },
+    "bergen-trail.path-4-2": {
+        "south1": {
+            "map": "bergen-trail.path-4-1",
+            "marker": "north"
+        },
+        "south2": {
+            "map": "bergen-trail.path-4-1-1",
+            "marker": "north"
+        },
+        "west": {
+            "map": "bergen-trail.path-5",
+            "marker": "east"
+        },
+        "top": {
+            "map": "bergen-trail.path-7-2",
+            "marker": "bottom"
+        }
+    },
+    "bergen-trail.path-7-2": {
+        "bottom": {
+            "map": "bergen-trail.path-4-2",
+            "marker": "top"
+        },
+        "left": {
+            "map": "bergen-trail.path-7-1",
+            "marker": "right"
+        },
+        "right": {
+            "map": "bergen-trail.path-7-2-1",
+            "marker": "left"
+        }
+    },
+    "bergen-trail.path-5": {
+        "west": {
+            "map": "bergen-trail.path-3-3",
+            "marker": "east"
+        },
+        "east": {
+            "map": "bergen-trail.path-4-2",
+            "marker": "west"
+        },
+        "north": {
+            "map": "bergen-trail.path-6",
+            "marker": "south"
+        }
+    },
+    "bergen-trail.path-1-entrance": {
+        "south-exit_autumn": {
+            "map": "autumn.path-8",
+            "marker": "top"
+        },
+        "north": {
+            "map": "bergen-trail.path-2",
+            "marker": "south"
+        }
+    },
+    "bergen-trail.path-6": {
+        "south": {
+            "map": "bergen-trail.path-5",
+            "marker": "north"
+        },
+        "east": {
+            "map": "bergen-trail.path-7-1",
+            "marker": "west"
+        },
+        "east(2)": {
+            "map": "bergen-trail.path-7-1",
+            "marker": "west(2)"
+        },
+        "left-1": {
+            "map": "bergen-trail.path-6-1",
+            "marker": "right"
+        }
+    },
+    "bergen-trail.path-8": {
+        "west": {
+            "map": "bergen.bergen",
+            "marker": "right"
+        },
+        "south": {
+            "map": "bergen-trail.path-7-1",
+            "marker": "north"
+        },
+        "west-2": {
+            "map": "bergen.bergen",
+            "marker": "right-2"
+        },
+        "cave-smith": {
+            "map": "bergen-trail.cave.cave-08-smith",
+            "marker": "entrance"
+        }
+    },
+    "dreams.dream15": {
+        "east-1": {
+            "map": "arid.town-2",
+            "marker": "west-1"
+        }
+    },
+    "forest.path-02": {
+        "left-1": {
+            "map": "forest.path-01-entrance",
+            "marker": "right-1"
+        },
+        "down-1": {
+            "map": "forest.path-03",
+            "marker": "top-1"
+        },
+        "right-1": {
+            "map": "forest.path-06",
+            "marker": "left-1"
+        },
+        "up-1": {
+            "map": "forest.caves.path-02-to-08",
+            "marker": "bottom-1"
+        },
+        "right-2": {
+            "map": "forest.path-06",
+            "marker": "left-2"
+        }
+    },
+    "forest.path-03": {
+        "top-1": {
+            "map": "forest.path-02",
+            "marker": "down-1"
+        },
+        "right-1": {
+            "map": "forest.path-04-hostel",
+            "marker": "left-1"
+        }
+    },
+    "forest.path-06": {
+        "left-1": {
+            "map": "forest.path-02",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "forest.path-02",
+            "marker": "right-2"
+        },
+        "bottom-1": {
+            "map": "forest.path-05",
+            "marker": "top-1"
+        },
+        "cave-1": {
+            "map": "forest.caves.path-06-chasm",
+            "marker": "bottom-1"
+        }
+    },
+    "forest.path-05": {
+        "left-1": {
+            "map": "forest.path-04-hostel",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "forest.path-04-hostel",
+            "marker": "right-2"
+        },
+        "top-1": {
+            "map": "forest.path-06",
+            "marker": "bottom-1"
+        }
+    },
+    "forest.path-07": {
+        "left-1": {
+            "map": "forest.caves.path-07-to-08",
+            "marker": "right-1"
+        },
+        "right-1": {
+            "map": "forest.caves.path-06-chasm",
+            "marker": "left-1"
+        }
+    },
+    "forest.path-08": {
+        "left-1": {
+            "map": "forest.caves.path-02-to-08",
+            "marker": "right-2"
+        },
+        "bottom-1": {
+            "map": "forest.caves.path-07-to-08",
+            "marker": "top-1"
+        },
+        "top-1": {
+            "map": "forest.caves.path-08-to-10",
+            "marker": "bottom-1"
+        }
+    },
+    "forest.path-09": {
+        "bottom-1": {
+            "map": "forest.caves.path-06-chasm",
+            "marker": "up-1"
+        },
+        "cave": {
+            "map": "forest.caves.cave-09-henry-hideout",
+            "marker": "bottom-1"
+        }
+    },
+    "forest.path-04-hostel": {
+        "left-1": {
+            "map": "forest.path-03",
+            "marker": "right-1"
+        },
+        "right-1": {
+            "map": "forest.path-05",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "forest.path-05",
+            "marker": "left-2"
+        },
+        "botom-1": {
+            "map": "forest.path-04-vaga",
+            "marker": "top-1"
+        },
+        "botom-2": {
+            "map": "forest.path-04-vaga",
+            "marker": "top-2"
+        }
+    },
+    "forest.path-13": {
+        "left": {
+            "map": "forest.path-04-vaga",
+            "marker": "right"
+        },
+        "cave": {
+            "map": "forest.caves.cave-013-pandza-01",
+            "marker": "exit"
+        }
+    },
+    "forest.path-10": {
+        "left-1": {
+            "map": "forest.caves.path-08-to-10",
+            "marker": "right-1"
+        },
+        "right-1": {
+            "map": "forest.path-10-hidden",
+            "marker": "left-1"
+        }
+    },
+    "heat.path-05": {
+        "right-1": {
+            "map": "heat.path-04",
+            "marker": "left"
+        },
+        "right-2": {
+            "map": "heat.path-04",
+            "marker": "left-2"
+        },
+        "top-1": {
+            "map": "heat.path-06",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "heat.path-06",
+            "marker": "bottom-2"
+        },
+        "left-1": {
+            "map": "heat.path-07",
+            "marker": "right-1"
+        },
+        "bottom-1": {
+            "map": "heat.cliffs.cliffs-path-02",
+            "marker": "top"
+        }
+    },
+    "forest.path-12": {
+        "left-1": {
+            "map": "forest.caves.path-11-to-12",
+            "marker": "right-1"
+        }
+    },
+    "heat-village.baki-1": {
+        "top": {
+            "map": "heat.path-11",
+            "marker": "bottom"
+        },
+        "bottom": {
+            "map": "heat-village.baki-2",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "heat-village.baki-2",
+            "marker": "top-3"
+        },
+        "bottom-3": {
+            "map": "heat-village.baki-2",
+            "marker": "top-2"
+        }
+    },
+    "jungle-city.east": {
+        "left-1": {
+            "map": "jungle-city.center",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "jungle-city.center",
+            "marker": "right-2"
+        },
+        "left-3": {
+            "map": "jungle-city.center",
+            "marker": "right-3"
+        }
+    },
+    "jungle-city.center": {
+        "exit": {
+            "map": "jungle-city.entrance",
+            "marker": "north"
+        },
+        "right-1": {
+            "map": "jungle-city.east",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "jungle-city.east",
+            "marker": "left-2"
+        },
+        "right-3": {
+            "map": "jungle-city.east",
+            "marker": "left-3"
+        },
+        "left-1": {
+            "map": "jungle-city.west",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "jungle-city.west",
+            "marker": "right-2"
+        },
+        "right-4": {
+            "map": "jungle-city.east",
+            "marker": "left-2"
+        },
+        "right-5": {
+            "map": "jungle-city.east",
+            "marker": "left-2"
+        },
+        "left-3": {
+            "map": "jungle-city.west",
+            "marker": "right-2"
+        },
+        "left-4": {
+            "map": "jungle-city.west",
+            "marker": "right-2"
+        }
+    },
+    "jungle-city.entrance": {
+        "south": {
+            "map": "jungle.path-02-crossroads",
+            "marker": "top"
+        },
+        "north": {
+            "map": "jungle-city.center",
+            "marker": "exit"
+        }
+    },
+    "jungle.path-01-entrance": {
+        "bottom": {
+            "map": "autumn-fall.path-05",
+            "marker": "top"
+        },
+        "top": {
+            "map": "jungle.path-02-crossroads",
+            "marker": "bottom"
+        }
+    },
+    "jungle.path-04-end": {
+        "bottom-1": {
+            "map": "jungle.path-03-sync",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "jungle.left.path-left-04",
+            "marker": "top-1"
+        },
+        "bottom-3": {
+            "map": "jungle.path-03-sync",
+            "marker": "top-2"
+        },
+        "top-1": {
+            "map": "jungle.dng.dng-crossing",
+            "marker": "bottom-1"
+        }
+    },
+    "jungle.path-02-crossroads": {
+        "bottom": {
+            "map": "jungle.path-01-entrance",
+            "marker": "top"
+        },
+        "left-1": {
+            "map": "jungle.left.path-left-01",
+            "marker": "right-1"
+        },
+        "right-1": {
+            "map": "jungle.right.right-path-01",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "jungle.right.right-path-01",
+            "marker": "left-2"
+        },
+        "top": {
+            "map": "jungle-city.entrance",
+            "marker": "south"
+        },
+        "left-2": {
+            "map": "jungle.left.path-left-01",
+            "marker": "right-2"
+        }
+    },
+    "jungle.path-03-sync": {
+        "right-1": {
+            "map": "jungle.right.right-path-04",
+            "marker": "left-1"
+        },
+        "top-1": {
+            "map": "jungle.path-04-end",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "jungle.path-04-end",
+            "marker": "bottom-3"
+        },
+        "left-1": {
+            "map": "jungle.left.path-left-04",
+            "marker": "right-1"
+        }
+    },
+    "hideout.path-3": {
+        "bottom": {
+            "map": "hideout.path-2",
+            "marker": "top"
+        }
+    },
+    "rhombus-sqr.arena-1": {
+        "bottom-1": {
+            "map": "rhombus-sqr.center-s",
+            "marker": "top-1"
+        },
+        "right-1": {
+            "map": "rhombus-sqr.center-e",
+            "marker": "left-1"
+        },
+        "left-1": {
+            "map": "rhombus-sqr.center-w",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "rhombus-sqr.center-w",
+            "marker": "right-2"
+        },
+        "left-3": {
+            "map": "rhombus-sqr.center-w",
+            "marker": "right-3"
+        },
+        "arenaEntrance": {
+            "map": "rhombus-sqr.interior.arena-01",
+            "marker": "entrance"
+        }
+    },
+    "rhombus-sqr.center-e": {
+        "bottom-1": {
+            "map": "rhombus-sqr.center-se",
+            "marker": "top-1"
+        },
+        "right-1": {
+            "map": "rhombus-sqr.shops-1",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "rhombus-sqr.shops-1",
+            "marker": "left-2"
+        },
+        "left-1": {
+            "map": "rhombus-sqr.arena-1",
+            "marker": "right-1"
+        },
+        "top-1": {
+            "map": "rhombus-sqr.center-ne",
+            "marker": "bottom-1"
+        },
+        "right-3": {
+            "map": "rhombus-sqr.center-e",
+            "marker": "right-3"
+        }
+    },
+    "rhombus-sqr.center-ne": {
+        "bottom-1": {
+            "map": "rhombus-sqr.center-e",
+            "marker": "top-1"
+        },
+        "left-south": {
+            "map": "rhombus-sqr.center-n",
+            "marker": "right-south"
+        },
+        "left-north": {
+            "map": "rhombus-sqr.center-n",
+            "marker": "right-north"
+        },
+        "left-up": {
+            "map": "rhombus-sqr.center-n",
+            "marker": "right-up"
+        }
+    },
+    "rhombus-sqr.center-nw": {
+        "bottom": {
+            "map": "rhombus-sqr.center-w",
+            "marker": "top"
+        },
+        "right-2": {
+            "map": "rhombus-sqr.center-n",
+            "marker": "left-north"
+        },
+        "right-1": {
+            "map": "rhombus-sqr.center-n",
+            "marker": "left-south"
+        }
+    },
+    "rhombus-sqr.center-se": {
+        "left-2": {
+            "map": "rhombus-sqr.center-s",
+            "marker": "right-2"
+        },
+        "left-1": {
+            "map": "rhombus-sqr.center-s",
+            "marker": "right-1"
+        },
+        "left-3": {
+            "map": "rhombus-sqr.center-s",
+            "marker": "right-3"
+        },
+        "bottom-1": {
+            "map": "rhombus-sqr.center-se",
+            "marker": "bottom-1"
+        },
+        "right-1": {
+            "map": "rhombus-sqr.center-se",
+            "marker": "bottom-1"
+        },
+        "top-1": {
+            "map": "rhombus-sqr.center-e",
+            "marker": "bottom-1"
+        }
+    },
+    "rhombus-sqr.center-n": {
+        "right-south": {
+            "map": "rhombus-sqr.center-ne",
+            "marker": "left-south"
+        },
+        "left-south": {
+            "map": "rhombus-sqr.center-nw",
+            "marker": "right-1"
+        },
+        "right-north": {
+            "map": "rhombus-sqr.center-ne",
+            "marker": "left-north"
+        },
+        "right-up": {
+            "map": "rhombus-sqr.center-ne",
+            "marker": "left-up"
+        },
+        "left-north": {
+            "map": "rhombus-sqr.center-nw",
+            "marker": "right-2"
+        }
+    },
+    "rhombus-sqr.shops-1": {
+        "left-1": {
+            "map": "rhombus-sqr.center-e",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "rhombus-sqr.center-e",
+            "marker": "right-2"
+        },
+        "bottom-1": {
+            "map": "rhombus-sqr.shops-1",
+            "marker": "left-1"
+        },
+        "top-1": {
+            "map": "rhombus-sqr.shops-1",
+            "marker": "top-1"
+        }
+    },
+    "rhombus-sqr.residential-s1": {
+        "right-1": {
+            "map": "rhombus-sqr.residential-s1",
+            "marker": "right-1"
+        },
+        "bottom-1": {
+            "map": "rhombus-sqr.residential-s1",
+            "marker": "right-3"
+        },
+        "left-1": {
+            "map": "rhombus-sqr.beach-sw",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "rhombus-sqr.beach-sw",
+            "marker": "right-2"
+        },
+        "left-3": {
+            "map": "rhombus-sqr.beach-sw",
+            "marker": "right-3"
+        },
+        "top-1": {
+            "map": "rhombus-sqr.center-s",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "rhombus-sqr.center-s",
+            "marker": "bottom-2"
+        },
+        "bottom-2": {
+            "map": "rhombus-sqr.residential-s1",
+            "marker": "right-3"
+        },
+        "right-2": {
+            "map": "rhombus-sqr.residential-s1",
+            "marker": "right-1"
+        },
+        "right-3": {
+            "map": "rhombus-sqr.residential-s1",
+            "marker": "right-1"
+        }
+    },
+    "rookie-harbor.east": {
+        "left": {
+            "map": "rookie-harbor.center",
+            "marker": "right-1"
+        },
+        "north": {
+            "map": "autumn-fall.path-01",
+            "marker": "bottom"
+        }
+    },
+    "rookie-harbor.west": {
+        "right": {
+            "map": "rookie-harbor.center",
+            "marker": "left"
+        },
+        "left": {
+            "map": "autumn.entrance",
+            "marker": "right"
+        }
+    },
+    "rookie-harbor.teleporter": {
+        "exit": {
+            "map": "rookie-harbor.south",
+            "marker": "bottom"
+        }
+    },
+    "arid.interior.flat": {
+        "entrance": {
+            "map": "arid.interior.challenge-2-ug",
+            "marker": "exit"
+        }
+    },
+    "arid.interior.lobby": {
+        "entrance": {
+            "map": "arid.interior.challenge-1-ug",
+            "marker": "exit"
+        }
+    },
+    "arid-dng.first.room-01": {
+        "entrance": {
+            "map": "arid.tower-1",
+            "marker": "checkpointC"
+        }
+    },
+    "arena.boss.ape-boss": {
+        "exitSouth": {
+            "map": "tree-dng.f3.branch-middle",
+            "marker": "entrance"
+        }
+    },
+    "autumn.caves.cave-3-to-6": {
+        "left": {
+            "map": "autumn.path5",
+            "marker": "right-cave"
+        },
+        "right": {
+            "map": "autumn.path-3-4",
+            "marker": "left"
+        }
+    },
+    "autumn.guild.entrance": {
+        "bottom": {
+            "map": "autumn.path-3-1",
+            "marker": "top"
+        },
+        "left": {
+            "map": "autumn.guild.left",
+            "marker": "right"
+        },
+        "left2": {
+            "map": "autumn.guild.left",
+            "marker": "right2"
+        },
+        "top": {
+            "map": "autumn.guild.last-minute-heroes",
+            "marker": "bottom"
+        },
+        "top2": {
+            "map": "autumn.guild.last-minute-heroes",
+            "marker": "bottom2"
+        },
+        "top3": {
+            "map": "autumn.guild.last-minute-heroes",
+            "marker": "bottom3"
+        },
+        "bottomBlaLeft": {
+            "map": "autumn.path-3-1",
+            "marker": "top"
+        },
+        "bottomBlaRight": {
+            "map": "autumn.path-3-1",
+            "marker": "top"
+        }
+    },
+    "autumn.guild.last-minute-heroes": {
+        "bottom": {
+            "map": "autumn.guild.entrance",
+            "marker": "top"
+        },
+        "bottom2": {
+            "map": "autumn.guild.entrance",
+            "marker": "top2"
+        },
+        "bottom3": {
+            "map": "autumn.guild.entrance",
+            "marker": "top3"
+        }
+    },
+    "autumn.guild.left": {
+        "right": {
+            "map": "autumn.guild.entrance",
+            "marker": "left"
+        },
+        "right2": {
+            "map": "autumn.guild.entrance",
+            "marker": "left2"
+        }
+    },
+    "autumn-fall.caves.buffelcave-1": {
+        "exit": {
+            "map": "autumn-fall.path-08",
+            "marker": "bullCave"
+        },
+        "next": {
+            "map": "autumn-fall.caves.buffelcave-2",
+            "marker": "exit"
+        }
+    },
+    "autumn-fall.caves.path-03-exit": {
+        "left-1": {
+            "map": "autumn-fall.path-03",
+            "marker": "right-1"
+        },
+        "right-1": {
+            "map": "forest.caves.path-01-entrance",
+            "marker": "left-1"
+        }
+    },
+    "autumn-fall.caves.path-04-cave-01": {
+        "start": {
+            "map": "autumn-fall.path-04",
+            "marker": "cave"
+        },
+        "end": {
+            "map": "autumn-fall.caves.path-04-cave-02",
+            "marker": "start"
+        }
+    },
+    "autumn-fall.caves.path-04-cave-02": {
+        "start": {
+            "map": "autumn-fall.caves.path-04-cave-01",
+            "marker": "end"
+        },
+        "end": {
+            "map": "autumn-fall.caves.path-04-cave-03",
+            "marker": "start"
+        }
+    },
+    "autumn-fall.caves.buffelcave-2": {
+        "exit": {
+            "map": "autumn-fall.caves.buffelcave-1",
+            "marker": "next"
+        }
+    },
+    "autumn-fall.caves.path-04-cave-04": {
+        "start": {
+            "map": "autumn-fall.caves.path-04-cave-03",
+            "marker": "end"
+        },
+        "end": {
+            "map": "autumn-fall.raid.raid-01",
+            "marker": "start"
+        }
+    },
+    "autumn-fall.caves.path-04-cave-03": {
+        "start": {
+            "map": "autumn-fall.caves.path-04-cave-02",
+            "marker": "end"
+        },
+        "end": {
+            "map": "autumn-fall.caves.path-04-cave-04",
+            "marker": "start"
+        }
+    },
+    "autumn-fall.raid.raid-02": {
+        "bottom-1": {
+            "map": "",
+            "marker": false
+        },
+        "bottom-2": {
+            "map": "",
+            "marker": false
+        },
+        "top-1": {
+            "map": "autumn-fall.raid.raid-03",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "autumn-fall.raid.raid-03",
+            "marker": "bottom-2"
+        }
+    },
+    "bergen.bergen2": {
+        "bottom-3": {
+            "map": "bergen.bergen",
+            "marker": "top-3"
+        },
+        "bottom-4": {
+            "map": "bergen.bergen",
+            "marker": "top-4"
+        },
+        "bottom-1": {
+            "map": "bergen.bergen",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "bergen.bergen",
+            "marker": "top-2"
+        },
+        "bottom-6": {
+            "map": "bergen.bergen",
+            "marker": "top-9"
+        },
+        "bottom-8": {
+            "map": "bergen.bergen",
+            "marker": "top-6"
+        },
+        "top": {
+            "map": "bergen.mine-entrance",
+            "marker": "south"
+        },
+        "left": {
+            "map": "bergen.elevator",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "bergen.elevator",
+            "marker": "right-2"
+        },
+        "goat-teleport": {
+            "map": "bergen.bergen",
+            "marker": "top-2"
+        }
+    },
+    "bergen.bergen": {
+        "right": {
+            "map": "bergen-trail.path-8",
+            "marker": "west"
+        },
+        "right-2": {
+            "map": "bergen-trail.path-8",
+            "marker": "west-2"
+        },
+        "top-1": {
+            "map": "bergen.bergen2",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "bergen.bergen2",
+            "marker": "bottom-2"
+        },
+        "top-3": {
+            "map": "bergen.bergen2",
+            "marker": "bottom-3"
+        },
+        "top-4": {
+            "map": "bergen.bergen2",
+            "marker": "bottom-4"
+        },
+        "top-5": {
+            "map": "bergen.karotto-cave",
+            "marker": "bottomt"
+        },
+        "top-6": {
+            "map": "bergen.bergen2",
+            "marker": "bottom-8-alt"
+        },
+        "top-9": {
+            "map": "bergen.bergen2",
+            "marker": "bottom-6"
+        }
+    },
+    "autumn-fall.raid.raid-04-cave": {
+        "start": {
+            "map": "",
+            "marker": false
+        }
+    },
+    "bergen.interior.guild-basement": {
+        "stairs": {
+            "map": "bergen.guild-1",
+            "marker": "stairs"
+        }
+    },
+    "bergen-trail.cave.cave-4-1-1": {
+        "bottom": {
+            "map": "bergen-trail.path-4-1-1",
+            "marker": "cave"
+        }
+    },
+    "bergen-trail.cave.cave-6-1": {
+        "bottom": {
+            "map": "bergen-trail.path-6-1",
+            "marker": "cave"
+        }
+    },
+    "bergen-trail.cave.cave-08-smith": {
+        "entrance": {
+            "map": "bergen-trail.path-8",
+            "marker": "cave-smith"
+        }
+    },
+    "bergen-trail.cave.cave-6-2": {
+        "top": {
+            "map": "bergen-trail.cave.cave-6-3",
+            "marker": "bottom"
+        }
+    },
+    "bergen-trail.cave.cave-6-3": {
+        "bottom": {
+            "map": "bergen-trail.cave.cave-6-2",
+            "marker": "top"
+        },
+        "exit-left": {
+            "map": "",
+            "marker": false
+        },
+        "exit-right": {
+            "map": "",
+            "marker": false
+        }
+    },
+    "bergen-trail.cave.cave-7-1-1-goat": {
+        "exit": {
+            "map": "bergen-trail.path-7-1",
+            "marker": "goat-cave"
+        },
+        "next-room": {
+            "map": "bergen-trail.cave.cave-7-1-1-goat2",
+            "marker": "first-room"
+        }
+    },
+    "bergen-trail.path-7-1": {
+        "west": {
+            "map": "bergen-trail.path-6",
+            "marker": "east"
+        },
+        "west(2)": {
+            "map": "bergen-trail.path-6",
+            "marker": "east(2)"
+        },
+        "north": {
+            "map": "bergen-trail.path-8",
+            "marker": "south"
+        },
+        "right": {
+            "map": "bergen-trail.path-7-2",
+            "marker": "left"
+        },
+        "goat-cave": {
+            "map": "bergen-trail.cave.cave-7-1-1-goat",
+            "marker": "exit"
+        }
+    },
+    "bergen-trail.cave.cave-7-1-1-goat2": {
+        "first-room": {
+            "map": "bergen-trail.cave.cave-7-1-1-goat",
+            "marker": "next-room"
+        }
+    },
+    "bergen-trail.cave.cave-7-1-1-goat3": {
+        "fauxTele": {
+            "map": "bergen-trail.cave.cave-7-1-1-goat3",
+            "marker": "arena"
+        }
+    },
+    "cold-dng.b1.room2": {
+        "exit": {
+            "map": "cold-dng.b1.room3",
+            "marker": "entrance"
+        }
+    },
+    "cold-dng.b1.room3": {
+        "entrance": {
+            "map": "cold-dng.b1.room2",
+            "marker": "exit"
+        }
+    },
+    "cold-dng.b1.room7": {
+        "exit": {
+            "map": "cold-dng.b2.room6",
+            "marker": "exit"
+        }
+    },
+    "cold-dng.b4.center": {
+        "exitNW": {
+            "map": "cold-dng.b4.room2",
+            "marker": "entrance"
+        },
+        "exitSW": {
+            "map": "cold-dng.b4.room2",
+            "marker": "exitSE"
+        },
+        "exitEast": {
+            "map": "cold-dng.b4.room1",
+            "marker": "entrance"
+        }
+    },
+    "cold-dng.b4.room2": {
+        "exitSE": {
+            "map": "cold-dng.b4.center",
+            "marker": "exitSW"
+        },
+        "entrance": {
+            "map": "cold-dng.b4.center",
+            "marker": "exitNW"
+        },
+        "exitNorth": {
+            "map": "cold-dng.b4.room3",
+            "marker": "entranceSW"
+        },
+        "exitNW": {
+            "map": "cold-dng.b4.room7",
+            "marker": "entrance"
+        },
+        "exitSW": {
+            "map": "cold-dng.b4.room8",
+            "marker": "entrance"
+        }
+    },
+    "cold-dng.b4.room1": {
+        "entrance": {
+            "map": "cold-dng.b4.center",
+            "marker": "exitEast"
+        },
+        "exitNorth": {
+            "map": "cold-dng.b4.room3",
+            "marker": "entranceSE"
+        },
+        "exitNE": {
+            "map": "cold-dng.b4.room4",
+            "marker": "entrance"
+        },
+        "exitSE": {
+            "map": "cold-dng.b4.room5",
+            "marker": "entrance"
+        },
+        "exitSouth": {
+            "map": "cold-dng.b4.room6",
+            "marker": "entrance"
+        }
+    },
+    "cold-dng.b4.room4": {
+        "entrance": {
+            "map": "cold-dng.b4.room1",
+            "marker": "exitNE"
+        }
+    },
+    "cold-dng.b4.room5": {
+        "entrance": {
+            "map": "cold-dng.b4.room1",
+            "marker": "exitSE"
+        }
+    },
+    "cold-dng.b4.room6": {
+        "entrance": {
+            "map": "cold-dng.b4.room1",
+            "marker": "exitSouth"
+        }
+    },
+    "cold-dng.b4.room8": {
+        "entrance": {
+            "map": "cold-dng.b4.room2",
+            "marker": "exitSW"
+        }
+    },
+    "cold-dng.b4.room3": {
+        "entranceSW": {
+            "map": "cold-dng.b4.room2",
+            "marker": "exitNorth"
+        },
+        "entranceSE": {
+            "map": "cold-dng.b4.room1",
+            "marker": "exitNorth"
+        }
+    },
+    "cold-dng.b3.room1": {
+        "exitNW": {
+            "map": "cold-dng.b3.room2",
+            "marker": "entrance"
+        },
+        "exitNE": {
+            "map": "cold-dng.b3.room2",
+            "marker": "exit"
+        }
+    },
+    "cold-dng.b4.room7": {
+        "entrance": {
+            "map": "cold-dng.b4.room2",
+            "marker": "exitNW"
+        }
+    },
+    "cold-dng.b3.room2": {
+        "entrance": {
+            "map": "cold-dng.b3.room1",
+            "marker": "exitNW"
+        },
+        "exit": {
+            "map": "cold-dng.b3.room1",
+            "marker": "exitNE"
+        }
+    },
+    "cold-dng.b2.room6": {
+        "exit": {
+            "map": "cold-dng.b1.room7",
+            "marker": "exit"
+        }
+    },
+    "cold-dng.b3.room4": {
+        "exit": {
+            "map": "cold-dng.b3.room5",
+            "marker": "entrance"
+        }
+    },
+    "cold-dng.b3.room5": {
+        "entrance": {
+            "map": "cold-dng.b3.room4",
+            "marker": "exit"
+        }
+    },
+    "cold-dng.g.boss": {
+        "entrance": {
+            "map": "cold-dng.g.center",
+            "marker": "bossExit"
+        }
+    },
+    "cold-dng.g.center": {
+        "south": {
+            "map": "bergen.mine-entrance",
+            "marker": "top"
+        }
+    },
+    "cold-dng.g.shade-room": {
+        "entrance": {
+            "map": "cold-dng.g.boss-post",
+            "marker": "exit"
+        }
+    },
+    "forest.caves.cave-013-pandza-02": {
+        "bottom": {
+            "map": "forest.caves.cave-013-pandza-01",
+            "marker": "top"
+        }
+    },
+    "forest.caves.cave-013-pandza-01": {
+        "exit": {
+            "map": "forest.path-13",
+            "marker": "cave"
+        },
+        "top": {
+            "map": "forest.caves.cave-013-pandza-02",
+            "marker": "bottom"
+        }
+    },
+    "forest.caves.exit-cave-02": {
+        "left-1": {
+            "map": "forest.caves.exit-cave-01",
+            "marker": "right-1"
+        },
+        "right-1": {
+            "map": "forest.caves.exit-cave-03",
+            "marker": "left-1"
+        }
+    },
+    "forest.caves.cave-09-henry-hideout": {
+        "bottom-1": {
+            "map": "forest.path-09",
+            "marker": "cave"
+        }
+    },
+    "forest.caves.exit-cave-03": {
+        "left-1": {
+            "map": "forest.caves.exit-cave-02",
+            "marker": "right-1"
+        }
+    },
+    "forest.caves.exit-cave-01": {
+        "right-1": {
+            "map": "forest.caves.exit-cave-02",
+            "marker": "left-1"
+        },
+        "entrance": {
+            "map": "forest.path-10-hidden",
+            "marker": "cave-1"
+        }
+    },
+    "forest.caves.path-01-entrance": {
+        "left-1": {
+            "map": "autumn-fall.caves.path-03-exit",
+            "marker": "right-1"
+        },
+        "right-1": {
+            "map": "forest.path-01-entrance",
+            "marker": "left-1"
+        }
+    },
+    "forest.caves.path-07-to-08": {
+        "right-1": {
+            "map": "forest.path-07",
+            "marker": "left-1"
+        },
+        "left-1": {
+            "map": "forest.caves.path-02-to-08",
+            "marker": "right-1"
+        },
+        "top-1": {
+            "map": "forest.path-08",
+            "marker": "bottom-1"
+        }
+    },
+    "forest.caves.path-02-to-08": {
+        "bottom-1": {
+            "map": "forest.path-02",
+            "marker": "up-1"
+        },
+        "right-1": {
+            "map": "forest.caves.path-07-to-08",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "forest.path-08",
+            "marker": "left-1"
+        },
+        "top": {
+            "map": "forest.caves.spider-cave-01",
+            "marker": "bottom"
+        }
+    },
+    "forest.interior.dojo-behind": {
+        "top": {
+            "map": "forest.interior.statue-room",
+            "marker": "bottom"
+        }
+    },
+    "forest.caves.path-11-maze": {
+        "bottom-1": {
+            "map": "forest.caves.path-11-to-12",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "forest.caves.path-11-to-12",
+            "marker": "top-2"
+        },
+        "top-1": {
+            "map": "forest.path-11-behind-maze",
+            "marker": "bottom-1"
+        }
+    },
+    "forest.caves.path-11-to-12": {
+        "top-1": {
+            "map": "forest.caves.path-11-maze",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "forest.caves.path-11-maze",
+            "marker": "bottom-2"
+        },
+        "bottom-1": {
+            "map": "forest.path-11",
+            "marker": "top-1"
+        },
+        "right-1": {
+            "map": "forest.path-12",
+            "marker": "left-1"
+        }
+    },
+    "forest.caves.spider-cave-01": {
+        "bottom": {
+            "map": "forest.caves.path-02-to-08",
+            "marker": "top"
+        }
+    },
+    "forest.interior.statue-room": {
+        "bottom": {
+            "map": "forest.interior.dojo-behind",
+            "marker": "top"
+        }
+    },
+    "heat.cliffs.cliffs-path-01": {
+        "top": {
+            "map": "heat.path-07",
+            "marker": "bottom"
+        },
+        "right-1": {
+            "map": "heat.cliffs.cliffs-path-02",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "heat.cliffs.cliffs-path-02",
+            "marker": "left-2"
+        },
+        "cave": {
+            "map": "heat.caves.cliff-cave-01",
+            "marker": "bottom-1"
+        },
+        "right-3": {
+            "map": "heat.cliffs.cliffs-path-03",
+            "marker": "left-1"
+        }
+    },
+    "forest.interior.temple-inner": {
+        "bottom": {
+            "map": "forest.path-12",
+            "marker": "dngEntrance"
+        }
+    },
+    "heat.oasis.oasis-path-01": {
+        "left": {
+            "map": "heat.path-03",
+            "marker": "right"
+        },
+        "bottom": {
+            "map": "heat.oasis.oasis-path-02",
+            "marker": "top"
+        },
+        "toise-cave": {
+            "map": "heat.special.heatadv-questcave-1",
+            "marker": "exit"
+        }
+    },
+    "heat.cliffs.cliffs-path-02": {
+        "left-1": {
+            "map": "heat.cliffs.cliffs-path-01",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "heat.cliffs.cliffs-path-01",
+            "marker": "right-2"
+        },
+        "top": {
+            "map": "heat.path-05",
+            "marker": "bottom-1"
+        }
+    },
+    "heat.cliffs.cliffs-path-03": {
+        "left-1": {
+            "map": "heat.cliffs.cliffs-path-01",
+            "marker": "right-3"
+        },
+        "cave1": {
+            "map": "heat.caves.cliffs-temple-01",
+            "marker": "bottom-1"
+        }
+    },
+    "heat.caves.cliff-cave-01": {
+        "bottom-1": {
+            "map": "heat.cliffs.cliffs-path-01",
+            "marker": "cave"
+        }
+    },
+    "heat.caves.cliffs-temple-01": {
+        "bottom-1": {
+            "map": "heat.cliffs.cliffs-path-03",
+            "marker": "cave1"
+        }
+    },
+    "heat.oasis.oasis-path-03": {
+        "top": {
+            "map": "heat.oasis.oasis-path-02",
+            "marker": "bottom"
+        },
+        "top-2": {
+            "map": "heat.path-04",
+            "marker": "bottom"
+        }
+    },
+    "heat.caves.maroon-cave-01": {
+        "entrance": {
+            "map": "heat.oasis.oasis-path-02",
+            "marker": "treeCave"
+        },
+        "exit": {
+            "map": "heat.caves.maroon-cave-02",
+            "marker": "entrance"
+        }
+    },
+    "heat.caves.maroon-cave-03": {
+        "entrance": {
+            "map": "heat.caves.maroon-cave-02",
+            "marker": "exit"
+        }
+    },
+    "heat.caves.maroon-cave-02": {
+        "entrance": {
+            "map": "heat.caves.maroon-cave-01",
+            "marker": "exit"
+        },
+        "exit": {
+            "map": "heat.caves.maroon-cave-03",
+            "marker": "entrance"
+        }
+    },
+    "heat.special.glitch-boss": {
+        "south": {
+            "map": "heat.special.glitch-area",
+            "marker": "north"
+        }
+    },
+    "heat.special.guards-billstonLair-1": {
+        "exit": {
+            "map": "heat.path-11",
+            "marker": "entranceGuardCave"
+        }
+    },
+    "heat.special.heatadv-questcave-1": {
+        "exit": {
+            "map": "heat.oasis.oasis-path-01",
+            "marker": "toise-cave"
+        }
+    },
+    "heat.special.heatadv-questTemple-1": {
+        "entrance": {
+            "map": "heat.special.heatadv-questcave-2",
+            "marker": "templeEntrance"
+        }
+    },
+    "heat.special.heatadv-questcave-2": {
+        "exit": {
+            "map": "heat.path-09",
+            "marker": "entrance-questCave"
+        }
+    },
+    "heat-dng.f2.room-cold": {
+        "exitWest": {
+            "map": "heat.dng-exterior",
+            "marker": "balconyWest"
+        },
+        "exitEast": {
+            "map": "heat.dng-exterior",
+            "marker": "balconyEast"
+        }
+    },
+    "heat-dng.g.room-01": {
+        "entrance": {
+            "map": "heat.dng-exterior",
+            "marker": "mainEntrance"
+        }
+    },
+    "heat-village.baki-2": {
+        "top-1": {
+            "map": "heat-village.baki-1",
+            "marker": "bottom"
+        },
+        "top-2": {
+            "map": "heat-village.baki-1",
+            "marker": "bottom-3"
+        },
+        "top-3": {
+            "map": "heat-village.baki-1",
+            "marker": "bottom-2"
+        },
+        "greenies-hq": {
+            "map": "heat-village.interior.faction-bakigreenies",
+            "marker": false
+        }
+    },
+    "jungle-city.halloween.boss": {
+        "start": {
+            "map": "jungle-city.halloween.room1",
+            "marker": "end"
+        }
+    },
+    "jungle-city.halloween.room1": {
+        "end": {
+            "map": "jungle-city.halloween.boss",
+            "marker": "start"
+        }
+    },
+    "jungle.caves.grove-cave-02": {
+        "bottom": {
+            "map": "jungle.caves.grove-cave-01",
+            "marker": "top"
+        }
+    },
+    "jungle.caves.grove-cave-01": {
+        "top": {
+            "map": "jungle.caves.grove-cave-02",
+            "marker": "bottom"
+        },
+        "bottom": {
+            "map": "jungle.grove.grove-path-01",
+            "marker": "cave"
+        }
+    },
+    "jungle.caves.infested-cave-02": {
+        "top": {
+            "map": "jungle.caves.infested-cave-01",
+            "marker": "bottom-2"
+        }
+    },
+    "jungle.caves.infested-cave-01": {
+        "bottom-1": {
+            "map": "jungle.infested.infested-path-05",
+            "marker": "cave"
+        },
+        "bottom-2": {
+            "map": "jungle.caves.infested-cave-02",
+            "marker": "top"
+        }
+    },
+    "jungle.caves.questcave-snowman-boss": {
+        "doorExit": {
+            "map": "jungle.caves.questcave-snowman-1",
+            "marker": "doorBoss"
+        }
+    },
+    "jungle.caves.smuggle-route-1": {
+        "t1": {
+            "map": "jungle.infested.infested-path-06",
+            "marker": "top"
+        },
+        "t2": {
+            "map": "jungle.caves.smuggle-route-2",
+            "marker": "top"
+        }
+    },
+    "jungle.caves.smuggle-route-2": {
+        "top": {
+            "map": "jungle.caves.smuggle-route-1",
+            "marker": "t2"
+        }
+    },
+    "jungle.grove.lost-shrine-02": {
+        "entrance": {
+            "map": "jungle.grove.lost-shrine-01",
+            "marker": "door"
+        }
+    },
+    "jungle.grove.lost-shrine-01": {
+        "bottom": {
+            "map": "jungle.grove.grove-path-02",
+            "marker": "top-1"
+        }
+    },
+    "jungle.infested.infested-path-05": {
+        "bottom": {
+            "map": "jungle.infested.infested-path-04",
+            "marker": "top-1"
+        },
+        "cave": {
+            "map": "jungle.caves.infested-cave-01",
+            "marker": "bottom-1"
+        }
+    },
+    "jungle.infested.infested-path-06": {
+        "bottom-1": {
+            "map": "jungle.infested.infested-path-01",
+            "marker": "top-2"
+        },
+        "top": {
+            "map": "jungle.caves.smuggle-route-1",
+            "marker": "t1"
+        }
+    },
+    "rhombus-sqr.beach-sw": {
+        "top-1": {
+            "map": "rhombus-sqr.center-sw",
+            "marker": "bottom-1"
+        },
+        "right-1": {
+            "map": "rhombus-sqr.residential-s1",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "rhombus-sqr.residential-s1",
+            "marker": "left-2"
+        },
+        "right-3": {
+            "map": "rhombus-sqr.residential-s1",
+            "marker": "left-3"
+        },
+        "top-2": {
+            "map": "rhombus-sqr.shops-1",
+            "marker": "top-1"
+        }
+    },
+    "rhombus-sqr.interior.arena-01": {
+        "entrance": {
+            "map": "rhombus-sqr.arena-1",
+            "marker": "arenaEntrance"
+        }
+    },
+    "rhombus-sqr.interior.arena-cafe-02": {
+        "stairs": {
+            "map": "rhombus-sqr.interior.arena-cafe-01",
+            "marker": "stairs"
+        }
+    },
+    "rhombus-sqr.interior.arena-cafe-01": {
+        "stairs": {
+            "map": "rhombus-sqr.interior.arena-cafe-02",
+            "marker": "stairs"
+        }
+    },
+    "rhombus-sqr.interior.goat-cafe-01": {
+        "stairs": {
+            "map": "rhombus-sqr.interior.arena-cafe-02",
+            "marker": "stairs"
+        }
+    },
+    "rhombus-sqr.interior.old-smith": {
+        "stairs": {
+            "map": "rhombus-sqr.interior.old-smith-upper",
+            "marker": "stairs"
+        }
+    },
+    "rhombus-sqr.interior.old-smith-upper": {
+        "stairs": {
+            "map": "rhombus-sqr.interior.old-smith",
+            "marker": "stairs"
+        }
+    },
+    "rookie-harbor.center": {
+        "bottom": {
+            "map": "rookie-harbor.south",
+            "marker": "top"
+        },
+        "bottom2": {
+            "map": "rookie-harbor.south",
+            "marker": "top2"
+        },
+        "top1": {
+            "map": "rookie-harbor.north",
+            "marker": "bottom1"
+        },
+        "top2": {
+            "map": "rookie-harbor.north",
+            "marker": "bottom2"
+        },
+        "left": {
+            "map": "rookie-harbor.west",
+            "marker": "right"
+        },
+        "right-1": {
+            "map": "rookie-harbor.east",
+            "marker": "left"
+        }
+    },
+    "shock-dng.g.room1": {
+        "entrance": {
+            "map": "jungle.dng.shock-exterior",
+            "marker": "entrance"
+        }
+    },
+    "wave-dng.g.room-entrance": {
+        "entrance": {
+            "map": "jungle.dng.wave-exterior",
+            "marker": "entrance"
+        }
+    },
+    "tree-dng.f2.room-01": {
+        "exitSouth": {
+            "map": "tree-dng.f3.branch-middle",
+            "marker": "entrance"
+        }
+    },
+    "tree-dng.f2.room-02": {
+        "entrance": {
+            "map": "tree-dng.f2.room-01",
+            "marker": "exitNorth"
+        }
+    },
+    "tree-dng.f4.boss": {
+        "stairs": {
+            "map": "jungle.dng.tree-expo-space",
+            "marker": "entrance"
+        }
+    },
+    "tree-dng.f3.east-01": {
+        "entrance": {
+            "map": "tree-dng.f3.branch-middle",
+            "marker": "exitEast"
+        },
+        "exit": {
+            "map": "tree-dng.f3.branch-east",
+            "marker": "entrance"
+        }
+    },
+    "tree-dng.f3.center-01": {
+        "entrance": {
+            "map": "tree-dng.f3.branch-middle",
+            "marker": "exitNorth"
+        }
+    },
+    "tree-dng.f3.west-01": {
+        "entrance": {
+            "map": "tree-dng.f3.branch-middle",
+            "marker": "exitWest"
+        },
+        "exit": {
+            "map": "tree-dng.f3.branch-west",
+            "marker": "entrance"
+        },
+        "entranceNorth": {
+            "map": "tree-dng.f3.branch-west",
+            "marker": "exitNorth"
+        }
+    },
+    "tree-dng.f3.west-02": {
+        "entrance": {
+            "map": "tree-dng.f3.branch-west",
+            "marker": "exit"
+        },
+        "exit": {
+            "map": "tree-dng.f3.branch-west",
+            "marker": "entranceNorth"
+        }
+    },
+    "tree-dng.f3.east-02": {
+        "entrance": {
+            "map": "tree-dng.f3.branch-east",
+            "marker": "exit"
+        }
+    },
+    "tree-dng.g.center-01-entrance": {
+        "entrance": {
+            "map": "jungle.dng.tree-exterior",
+            "marker": "entrance"
+        }
+    },
+    "autumn-fall.raid.raid-01": {
+        "start": {
+            "map": "autumn-fall.caves.path-04-cave-04",
+            "marker": "end"
+        },
+        "top-1": {
+            "map": "",
+            "marker": false
+        },
+        "top-2": {
+            "map": "",
+            "marker": false
+        }
+    },
+    "autumn-fall.raid.raid-03": {
+        "bottom-1": {
+            "map": "",
+            "marker": false
+        },
+        "bottom-2": {
+            "map": "",
+            "marker": false
+        }
+    },
+    "forest.caves.path-06-chasm": {
+        "bottom-1": {
+            "map": "forest.path-06",
+            "marker": "cave-1"
+        },
+        "left-1": {
+            "map": "forest.path-07",
+            "marker": "right-1"
+        },
+        "up-1": {
+            "map": "forest.path-09",
+            "marker": "bottom-1"
+        }
+    },
+    "forest.caves.path-08-to-10": {
+        "bottom-1": {
+            "map": "forest.path-08",
+            "marker": "top-1"
+        },
+        "right-1": {
+            "map": "forest.path-10",
+            "marker": "left-1"
+        },
+        "top-1": {
+            "map": "forest.path-11",
+            "marker": "bottom-1"
+        }
+    },
+    "heat.oasis.oasis-path-02": {
+        "bottom": {
+            "map": "heat.oasis.oasis-path-03",
+            "marker": "top"
+        },
+        "top": {
+            "map": "heat.oasis.oasis-path-01",
+            "marker": "bottom"
+        },
+        "treeCave": {
+            "map": "heat.caves.maroon-cave-01",
+            "marker": "entrance"
+        }
+    },
+    "heat.special.glitch-area": {
+        "north": {
+            "map": "heat.special.glitch-boss",
+            "marker": "south"
+        }
+    },
+    "jungle.clearing.clear-path-02": {
+        "left-1": {
+            "map": "jungle.clearing.clear-path-01",
+            "marker": "right-1"
+        },
+        "top-1": {
+            "map": "jungle.clearing.clear-path-03",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "jungle.clearing.clear-path-03",
+            "marker": "bottom-2"
+        }
+    },
+    "jungle.clearing.clear-path-04": {
+        "bottom-1": {
+            "map": "jungle.clearing.clear-path-03",
+            "marker": "top-1"
+        },
+        "left-1": {
+            "map": "jungle.right.right-path-02",
+            "marker": "right-1"
+        }
+    },
+    "jungle.clearing.clear-path-03": {
+        "bottom-1": {
+            "map": "jungle.clearing.clear-path-02",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "jungle.clearing.clear-path-02",
+            "marker": "top-2"
+        },
+        "top-1": {
+            "map": "jungle.clearing.clear-path-04",
+            "marker": "bottom-1"
+        }
+    },
+    "jungle.caves.questcave-td-1": {
+        "exit": {
+            "map": "jungle.grove.grove-path-03",
+            "marker": "td-cave"
+        }
+    },
+    "jungle.caves.questcave-snowman-1": {
+        "doorExitJungle": {
+            "map": "jungle.right.right-path-04",
+            "marker": "snow-cave"
+        },
+        "doorBoss": {
+            "map": "jungle.caves.questcave-snowman-boss",
+            "marker": "doorExit"
+        }
+    },
+    "jungle.caves.questcave-td-2": {
+        "exit": {
+            "map": "jungle.caves.questcave-td-1",
+            "marker": "entrance"
+        }
+    },
+    "jungle.dng.dng-crossing": {
+        "bottom-1": {
+            "map": "jungle.path-04-end",
+            "marker": "top-1"
+        },
+        "to-shock": {
+            "map": "jungle.dng.shock-exterior",
+            "marker": "left-1"
+        },
+        "to-wave": {
+            "map": "jungle.dng.wave-exterior",
+            "marker": "east"
+        },
+        "to-tree": {
+            "map": "jungle.dng.tree-exterior",
+            "marker": "south"
+        }
+    },
+    "jungle.dng.tree-expo-space": {
+        "entrance": {
+            "map": "tree-dng.f4.boss",
+            "marker": "stairs"
+        }
+    },
+    "jungle.dng.tree-exterior": {
+        "south": {
+            "map": "jungle.dng.dng-crossing",
+            "marker": "to-tree"
+        }
+    },
+    "jungle.left.path-left-01": {
+        "right-1": {
+            "map": "jungle.path-02-crossroads",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "jungle.path-02-crossroads",
+            "marker": "left-2"
+        },
+        "top-1": {
+            "map": "jungle.left.path-left-02",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "jungle.left.path-left-02",
+            "marker": "bottom-2"
+        }
+    },
+    "jungle.dng.shock-exterior": {
+        "left-1": {
+            "map": "jungle.dng.dng-crossing",
+            "marker": "to-shock"
+        }
+    },
+    "jungle.grove.grove-path-01": {
+        "bottom-1": {
+            "map": "jungle.left.path-left-02",
+            "marker": "top-2"
+        },
+        "right-1": {
+            "map": "jungle.left.path-left-03",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "jungle.left.path-left-03",
+            "marker": "left-2"
+        },
+        "top-1": {
+            "map": "jungle.grove.grove-path-02",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "jungle.grove.grove-path-02",
+            "marker": "bottom-2"
+        },
+        "cave": {
+            "map": "jungle.caves.grove-cave-01",
+            "marker": "bottom"
+        }
+    },
+    "jungle.dng.wave-exterior": {
+        "east": {
+            "map": "jungle.dng.dng-crossing",
+            "marker": "to-wave"
+        }
+    },
+    "jungle.grove.grove-path-03": {
+        "left-1": {
+            "map": "jungle.grove.grove-path-02",
+            "marker": "right-1"
+        },
+        "bottom-1": {
+            "map": "jungle.left.path-left-04",
+            "marker": "top-2"
+        },
+        "bottom-2": {
+            "map": "jungle.left.path-left-04",
+            "marker": "top-3"
+        },
+        "td-cave": {
+            "map": "jungle.caves.questcave-td-1",
+            "marker": "exit"
+        }
+    },
+    "jungle.left.path-left-02": {
+        "bottom-1": {
+            "map": "jungle.left.path-left-01",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "jungle.left.path-left-01",
+            "marker": "top-2"
+        },
+        "top-1": {
+            "map": "jungle.left.path-left-03",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "jungle.grove.grove-path-01",
+            "marker": "bottom-1"
+        }
+    },
+    "jungle.left.path-left-04": {
+        "bottom-1": {
+            "map": "jungle.left.path-left-03",
+            "marker": "top-1"
+        },
+        "top-1": {
+            "map": "jungle.path-04-end",
+            "marker": "bottom-2"
+        },
+        "top-2": {
+            "map": "jungle.grove.grove-path-03",
+            "marker": "bottom-1"
+        },
+        "top-3": {
+            "map": "jungle.grove.grove-path-03",
+            "marker": "bottom-2"
+        },
+        "right-1": {
+            "map": "jungle.path-03-sync",
+            "marker": "left-1"
+        }
+    },
+    "jungle.left.path-left-03": {
+        "bottom-1": {
+            "map": "jungle.left.path-left-02",
+            "marker": "top-1"
+        },
+        "left-1": {
+            "map": "jungle.grove.grove-path-01",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "jungle.grove.grove-path-01",
+            "marker": "right-2"
+        },
+        "top-1": {
+            "map": "jungle.left.path-left-04",
+            "marker": "bottom-1"
+        }
+    },
+    "jungle.infested.infested-path-02": {
+        "bottom-1": {
+            "map": "jungle.right.right-path-04",
+            "marker": "top-1"
+        },
+        "right-2": {
+            "map": "jungle.infested.infested-path-04",
+            "marker": "left-1"
+        },
+        "right-1": {
+            "map": "jungle.infested.infested-path-03",
+            "marker": "left-1"
+        }
+    },
+    "jungle.infested.infested-path-01": {
+        "left-1": {
+            "map": "jungle.right.right-path-04",
+            "marker": "right-1"
+        },
+        "top-1": {
+            "map": "jungle.infested.infested-path-03",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "jungle.infested.infested-path-06",
+            "marker": "bottom-1"
+        }
+    },
+    "jungle.infested.infested-path-03": {
+        "bottom-1": {
+            "map": "jungle.infested.infested-path-01",
+            "marker": "top-1"
+        },
+        "left-1": {
+            "map": "jungle.infested.infested-path-02",
+            "marker": "right-1"
+        },
+        "top-1": {
+            "map": "jungle.infested.infested-path-04",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "jungle.infested.infested-path-04",
+            "marker": "bottom-2"
+        },
+        "left-1-top1": {
+            "map": "jungle.infested.infested-path-02",
+            "marker": "right-1"
+        },
+        "left-1-top2": {
+            "map": "jungle.infested.infested-path-02",
+            "marker": "right-1"
+        }
+    },
+    "jungle.infested.infested-path-04": {
+        "bottom-1": {
+            "map": "jungle.infested.infested-path-03",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "jungle.infested.infested-path-03",
+            "marker": "top-2"
+        },
+        "left-1": {
+            "map": "jungle.infested.infested-path-02",
+            "marker": "right-2"
+        },
+        "top-1": {
+            "map": "jungle.infested.infested-path-05",
+            "marker": "bottom"
+        }
+    },
+    "jungle.right.right-path-02": {
+        "bottom-1": {
+            "map": "jungle.right.right-path-01",
+            "marker": "top-1"
+        },
+        "top-1": {
+            "map": "jungle.right.right-path-03",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "jungle.right.right-path-03",
+            "marker": "bottom-2"
+        },
+        "right-1": {
+            "map": "jungle.clearing.clear-path-04",
+            "marker": "left-1"
+        }
+    },
+    "jungle.right.right-path-03": {
+        "bottom-1": {
+            "map": "jungle.right.right-path-02",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "jungle.right.right-path-02",
+            "marker": "top-2"
+        },
+        "top-1": {
+            "map": "jungle.right.right-path-04",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "jungle.right.right-path-04",
+            "marker": "bottom-2"
+        }
+    },
+    "jungle.right.right-path-01": {
+        "left-1": {
+            "map": "jungle.path-02-crossroads",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "jungle.path-02-crossroads",
+            "marker": "right-2"
+        },
+        "top-1": {
+            "map": "jungle.right.right-path-02",
+            "marker": "bottom-1"
+        },
+        "bottom-1": {
+            "map": "jungle.clearing.clear-path-01",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "jungle.clearing.clear-path-01",
+            "marker": "top-2"
+        }
+    },
+    "jungle.right.right-path-04": {
+        "bottom-1": {
+            "map": "jungle.right.right-path-03",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "jungle.right.right-path-03",
+            "marker": "top-2"
+        },
+        "right-1": {
+            "map": "jungle.infested.infested-path-01",
+            "marker": "left-1"
+        },
+        "top-1": {
+            "map": "jungle.infested.infested-path-02",
+            "marker": "bottom-1"
+        },
+        "left-1": {
+            "map": "jungle.path-03-sync",
+            "marker": "right-1"
+        },
+        "snow-cave": {
+            "map": "jungle.caves.questcave-snowman-1",
+            "marker": "doorExitJungle"
+        }
+    },
+    "arid-dng.second.f0.entrance": {
+        "entrance": {
+            "map": "arid.tower-1",
+            "marker": "towerEntrance"
+        }
+    },
+    "jungle.clearing.clear-path-01": {
+        "top-1": {
+            "map": "jungle.right.right-path-01",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "jungle.right.right-path-01",
+            "marker": "bottom-2"
+        },
+        "right-1": {
+            "map": "jungle.clearing.clear-path-02",
+            "marker": "left-1"
+        }
+    },
+    "jungle.clearing.interior.chiefs-house-02": {
+        "s1": {
+            "map": "jungle.clearing.interior.chiefs-house-01",
+            "marker": "s1"
+        }
+    },
+    "jungle.grove.grove-path-02": {
+        "bottom-1": {
+            "map": "jungle.grove.grove-path-01",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "jungle.grove.grove-path-01",
+            "marker": "top-2"
+        },
+        "right-1": {
+            "map": "jungle.grove.grove-path-03",
+            "marker": "left-1"
+        },
+        "top-1": {
+            "map": "jungle.grove.lost-shrine-01",
+            "marker": "bottom"
+        }
+    },
+    "jungle.clearing.interior.chiefs-house-01": {
+        "s1": {
+            "map": "jungle.clearing.interior.chiefs-house-02",
+            "marker": "s1"
+        }
+    },
+    "rhombus-sqr.center-sw": {
+        "top": {
+            "map": "rhombus-sqr.center-w",
+            "marker": "bottom"
+        },
+        "right-2": {
+            "map": "rhombus-sqr.center-s",
+            "marker": "left-2"
+        },
+        "right-1": {
+            "map": "rhombus-sqr.center-s",
+            "marker": "left-1"
+        },
+        "bottom-1": {
+            "map": "rhombus-sqr.beach-sw",
+            "marker": "top-1"
+        },
+        "right-3": {
+            "map": "rhombus-sqr.center-s",
+            "marker": "left-3"
+        }
+    },
+    "evo-village.entrance": {
+        "bottom": {
+            "map": "autumn.path6",
+            "marker": "top"
+        },
+        "top": {
+            "map": "evo-village.center",
+            "marker": "bottom"
+        }
+    },
+    "rhombus-sqr.center-w": {
+        "bottom": {
+            "map": "rhombus-sqr.center-sw",
+            "marker": "top"
+        },
+        "right-1": {
+            "map": "rhombus-sqr.arena-1",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "rhombus-sqr.arena-1",
+            "marker": "left-2"
+        },
+        "right-3": {
+            "map": "rhombus-sqr.arena-1",
+            "marker": "left-3"
+        },
+        "left": {
+            "map": "rhombus-sqr.center-w",
+            "marker": "left"
+        },
+        "top": {
+            "map": "rhombus-sqr.center-nw",
+            "marker": "bottom"
+        }
+    },
+    "beach.path-04": {
+        "bottom-2": {
+            "map": "beach.path-05",
+            "marker": "top-2"
+        },
+        "bottom-1": {
+            "map": "beach.path-05",
+            "marker": "top-1"
+        },
+        "right-1": {
+            "map": "beach.path-03",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "beach.path-03",
+            "marker": "left-2"
+        }
+    },
+    "beach.path-01-entrance": {
+        "top-1": {
+            "map": "beach.path-02",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "beach.path-02",
+            "marker": "bottom-2"
+        },
+        "left-1": {
+            "map": "beach.path-08",
+            "marker": "right-1"
+        }
+    },
+    "beach.path-03": {
+        "left-1": {
+            "map": "beach.path-04",
+            "marker": "right-1"
+        },
+        "right-1": {
+            "map": "beach.path-02",
+            "marker": "left-1"
+        },
+        "left-2": {
+            "map": "beach.path-04",
+            "marker": "right-2"
+        },
+        "right-2": {
+            "map": "beach.path-02",
+            "marker": "left-2"
+        }
+    },
+    "beach.path-07": {
+        "left-1": {
+            "map": "beach.path-06",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "beach.path-06",
+            "marker": "right-2"
+        },
+        "right-1": {
+            "map": "beach.path-08",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "beach.path-08",
+            "marker": "left-2"
+        },
+        "top": {
+            "map": "beach.temple",
+            "marker": "bottom"
+        }
+    },
+    "beach.path-05": {
+        "top-2": {
+            "map": "beach.path-04",
+            "marker": "bottom-2"
+        },
+        "top-1": {
+            "map": "beach.path-04",
+            "marker": "bottom-1"
+        },
+        "bottom-2": {
+            "map": "beach.path-06",
+            "marker": "top-2"
+        },
+        "bottom-1": {
+            "map": "beach.path-06",
+            "marker": "top-1"
+        }
+    },
+    "beach.path-08": {
+        "left-1": {
+            "map": "beach.path-07",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "beach.path-07",
+            "marker": "right-2"
+        },
+        "right-1": {
+            "map": "beach.path-01-entrance",
+            "marker": "left-1"
+        }
+    },
+    "arena.special.dekay-boss-1": {
+        "south": {
+            "map": "heat.special.glitch-area",
+            "marker": "north"
+        }
+    },
+    "autumn-fall.raid.raid-04-cave-right": {
+        "start": {
+            "map": "",
+            "marker": false
+        }
+    },
+    "final-dng.b1.bridge-inner": {
+        "entrance": {
+            "map": "final-dng.b1.bridge-midboss",
+            "marker": "entrance"
+        }
+    },
+    "evo-village.center": {
+        "bottom": {
+            "map": "evo-village.entrance",
+            "marker": "top"
+        }
+    },
+    "evo-village.interior.lea-upper": {
+        "stairs": {
+            "map": "evo-village.interior.lea",
+            "marker": "stairs"
+        }
+    },
+    "final-dng.b2.bridge-inner": {
+        "entrance": {
+            "map": "final-dng.b2.bridge",
+            "marker": "exit"
+        }
+    },
+    "evo-village.interior.satoshi-upper": {
+        "stairs": {
+            "map": "evo-village.interior.satoshi",
+            "marker": "stairs"
+        }
+    },
+    "beach.path-06": {
+        "top-1": {
+            "map": "beach.path-05",
+            "marker": "bottom-1"
+        },
+        "right-1": {
+            "map": "beach.path-07",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "beach.path-07",
+            "marker": "left-2"
+        },
+        "top-2": {
+            "map": "beach.path-05",
+            "marker": "bottom-2"
+        }
+    },
+    "evo-village.interior.lea": {
+        "stairs": {
+            "map": "evo-village.interior.lea-upper",
+            "marker": "stairs"
+        }
+    },
+    "evo-village.interior.satoshi": {
+        "stairs": {
+            "map": "evo-village.interior.satoshi-upper",
+            "marker": "stairs"
+        }
+    },
+    "final-dng.b4.bridge-inner": {
+        "entrance": {
+            "map": "final-dng.b4.bridge",
+            "marker": "entrance"
+        }
+    },
+    "final-dng.b4.corridor": {
+        "entrance": {
+            "map": "final-dng.b4.bridge",
+            "marker": "exit"
+        },
+        "exit": {
+            "map": "final-dng.b4.stargate",
+            "marker": "entrance"
+        }
+    },
+    "final-dng.b3.bridge-inner": {
+        "entrance": {
+            "map": "final-dng.b3.bridge",
+            "marker": "entrance"
+        }
+    },
+    "beach.path-02": {
+        "bottom-1": {
+            "map": "beach.path-01-entrance",
+            "marker": "top-1"
+        },
+        "left-1": {
+            "map": "beach.path-03",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "beach.path-03",
+            "marker": "right-2"
+        },
+        "bottom-2": {
+            "map": "beach.path-01-entrance",
+            "marker": "top-2"
+        }
+    },
+    "final-dng.g.bridge-inner": {
+        "entrance": {
+            "map": "final-dng.g.bridge",
+            "marker": "exit"
+        }
+    },
+    "final-dng.g.room-s-4": {
+        "exit": {
+            "map": "final-dng.g.outdoor-01",
+            "marker": "bottom"
+        }
+    },
+    "final-dng.b4.stargate": {
+        "entrance": {
+            "map": "final-dng.b4.corridor",
+            "marker": "exit"
+        }
+    },
+    "final-dng.g.outdoor-01": {
+        "bottom": {
+            "map": "final-dng.g.room-s-4",
+            "marker": "exit"
+        },
+        "top-2": {
+            "map": "final-dng.g.outdoor-02-center",
+            "marker": "bottom-2"
+        },
+        "top-3": {
+            "map": "final-dng.g.outdoor-02-center",
+            "marker": "bottom-3"
+        },
+        "top-1": {
+            "map": "final-dng.g.outdoor-02-center",
+            "marker": "bottom-1"
+        }
+    },
+    "final-dng.g.outdoor-03-south-east": {
+        "left-1": {
+            "map": "final-dng.g.outdoor-02-center",
+            "marker": "right-1"
+        },
+        "left-2": {
+            "map": "final-dng.g.outdoor-02-center",
+            "marker": "right-2"
+        },
+        "top-1": {
+            "map": "final-dng.g.outdoor-04-north-east",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "final-dng.g.outdoor-04-north-east",
+            "marker": "bottom-2"
+        }
+    },
+    "final-dng.g.outdoor-02-center": {
+        "left-1": {
+            "map": "final-dng.g.outdoor-03-south-west",
+            "marker": "right-1"
+        },
+        "bottom-2": {
+            "map": "final-dng.g.outdoor-01",
+            "marker": "top-2"
+        },
+        "bottom-3": {
+            "map": "final-dng.g.outdoor-01",
+            "marker": "top-3"
+        },
+        "bottom-1": {
+            "map": "final-dng.g.outdoor-01",
+            "marker": "top-1"
+        },
+        "left-2": {
+            "map": "final-dng.g.outdoor-03-south-west",
+            "marker": "right-2"
+        },
+        "right-1": {
+            "map": "final-dng.g.outdoor-03-south-east",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "final-dng.g.outdoor-03-south-east",
+            "marker": "left-2"
+        }
+    },
+    "final-dng.g.outdoor-03-south-west": {
+        "top-1": {
+            "map": "final-dng.g.outdoor-04-north-west",
+            "marker": "bottom-1"
+        },
+        "top-2": {
+            "map": "final-dng.g.outdoor-04-north-west",
+            "marker": "bottom-2"
+        },
+        "top-3": {
+            "map": "final-dng.g.outdoor-04-north-west",
+            "marker": "bottom-3"
+        },
+        "right-1": {
+            "map": "final-dng.g.outdoor-02-center",
+            "marker": "left-1"
+        },
+        "right-2": {
+            "map": "final-dng.g.outdoor-02-center",
+            "marker": "left-2"
+        }
+    },
+    "final-dng.g.outdoor-04-north-east": {
+        "bottom-2": {
+            "map": "final-dng.g.outdoor-03-south-east",
+            "marker": "top-2"
+        },
+        "bottom-1": {
+            "map": "final-dng.g.outdoor-03-south-east",
+            "marker": "top-1"
+        },
+        "bottom-3": {
+            "map": "final-dng.g.outdoor-03-south-east",
+            "marker": "top-1"
+        },
+        "bottom-4": {
+            "map": "final-dng.g.outdoor-03-south-east",
+            "marker": "top-1"
+        }
+    },
+    "final-dng.g.outdoor-04-north-west": {
+        "bottom-3": {
+            "map": "final-dng.g.outdoor-03-south-west",
+            "marker": "top-3"
+        },
+        "bottom-1": {
+            "map": "final-dng.g.outdoor-03-south-west",
+            "marker": "top-1"
+        },
+        "bottom-2": {
+            "map": "final-dng.g.outdoor-03-south-west",
+            "marker": "top-2"
+        },
+        "bottom-4": {
+            "map": "final-dng.g.outdoor-03-south-west",
+            "marker": "top-1"
+        },
+        "bottom-5": {
+            "map": "final-dng.g.outdoor-03-south-west",
+            "marker": "top-1"
+        }
+    },
+    "beach.temple": {
+        "bottom": {
+            "map": "beach.path-07",
+            "marker": "top"
+        }
+    }
+}
