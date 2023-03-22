@@ -5,15 +5,28 @@ const path = require('path');
 const root = path.resolve('I:\\Programme\\SteamApps\\steamapps\\common\\CrossCode\\assets'); //../../
 
 (async () => {
+	// const inverseDirection = {
+	// 	"NORTH": "SOUTH",
+	// 	"EAST": "WEST",
+	// 	"SOUTH": "NORTH",
+	// 	"WEST": "EAST",
+	// }
+
 	const edges = {};
 	await forEachJson(path.join(root, 'data', 'maps'), (name, content) => {
+		const map = path.relative(path.join(root, 'data', 'maps'), name).replace('.json', '').replaceAll('/', '.').replaceAll('\\', '.');
+		edges[map] ??= {markers: {}, chests: []};
 		if ('entities' in content) {
 			for (const entity of content.entities) {
 				if (entity.type === 'TeleportGround') {
-					const map = path.relative(path.join(root, 'data', 'maps'), name).replace('.json', '').replaceAll('/', '.').replaceAll('\\', '.');
-					edges[map] ??= {};
-					edges[map][entity.settings.name] = {map: entity.settings.map, marker: entity.settings.marker};
+					edges[map].markers[entity.settings.name] = {to: {map: entity.settings.map, marker: entity.settings.marker}, dir: entity.settings.dir};
 					console.log(map, entity.settings.name, entity.settings.map, entity.settings.marker);
+				} else if (entity.type === 'Chest') {
+					const data = { id: entity.settings.mapId, type: entity.settings.chestType };
+					edges[map].chests.push(data);
+					if (entity.settings.spawnCondition) {
+						data.conditions = [{type: 'var', condition: entity.settings.spawnCondition}];
+					} 
 				}
 			}
 		}
@@ -21,13 +34,19 @@ const root = path.resolve('I:\\Programme\\SteamApps\\steamapps\\common\\CrossCod
 
 
 	await forEachJson(path.join(root, 'extension', 'post-game', 'data', 'maps'), (name, content) => {
+		const map = path.relative(path.join(root, 'extension', 'post-game', 'data', 'maps'), name).replace('.json', '').replaceAll('/', '.').replaceAll('\\', '.');
+		edges[map] ??= {markers: {}, chests: []};
 		if ('entities' in content) {
 			for (const entity of content.entities) {
 				if (entity.type === 'TeleportGround') {
-					const map = path.relative(path.join(root, 'extension', 'post-game', 'data', 'maps'), name).replace('.json', '').replaceAll('/', '.').replaceAll('\\', '.');
-					edges[map] ??= {};
-					edges[map][entity.settings.name] = {map: entity.settings.map, marker: entity.settings.marker};
+					edges[map].markers[entity.settings.name] = {to: {map: entity.settings.map, marker: entity.settings.marker}, dir: entity.settings.dir};
 					console.log(map, entity.settings.name, entity.settings.map, entity.settings.marker);
+				} else if (entity.type === 'Chest') {
+					const data = { id: entity.settings.mapId, type: entity.settings.chestType };
+					edges[map].chests.push(data);
+					if (entity.settings.spawnCondition) {
+						data.conditions = [{type: 'var', condition: entity.settings.spawnCondition}];
+					} 
 				}
 			}
 		}

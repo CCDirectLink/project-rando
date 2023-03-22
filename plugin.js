@@ -1,4 +1,5 @@
 import { Generator } from './generator.js';
+import { Random } from './random.js';
 
 /** @ {any} ig */
 
@@ -8,6 +9,10 @@ export default class ProjectRedo {
 	}
 
 	prestart() {
+		Random.init(this.baseDirectory);
+		const seed = (Math.random() + '').replace('.', '');
+		console.log('seed', seed);
+		Random.seed(seed);
 		this.load();
 	}
 

@@ -1,186 +1,227 @@
-/**
- * @typedef {{[name: string]: {
-			disabledEvents: string[],
-			connections: {
-				markers: string[],
-				exits: string[][],
-				chests: (number | {id: number, tags?: string[]})[]
-			}[] 
-		}}} MapData
- * @typedef {{[map: string]: {[exit: string]: {map: string, marker: string}}}} Edges
- */
-
+import { Random } from './random.js';
+var Direction;
+(function (Direction) {
+    Direction["NORTH"] = "NORTH";
+    Direction["EAST"] = "EAST";
+    Direction["SOUTH"] = "SOUTH";
+    Direction["WEST"] = "WEST";
+})(Direction || (Direction = {}));
 export class Generator {
-	constructor(mapData, edges) {
-		/**  @type {MapData} */
-		this.mapData = mapData;
-		/**  @type {Edges} */
-		this.edges = edges;
-	}
-
-	generate() {
-		//TODO: set seed
-
-		const mapNames = Object.keys(this.mapData);
-		const entrances = this._shuffle(mapNames.flatMap(map => this.mapData[map].connections.flatMap(c => c.markers.map(marker => ({map, marker})))));
-		
-		const areaSize = this._random(4, 6);
-		const areaRoots = entrances.slice(0, areaSize);
-
-		/** @type {Edges} */
-		const maps = {};
-
-		/** @type {[string, string][]} */
-		const availableExits = [];
-		
-		/** @type {[string, string][]} */
-		const availableEntrances = [];
-
-		const startRoot = areaRoots.pop();
-		const start = this._findSubarea(startRoot.map, startRoot.marker);
-		for (const exit of start.exits) {
-			const toFlags = exit.slice(2);
-			if (toFlags.length === 0 || (toFlags.length === 1 && toFlags[0] === 'maybe')) {
-				availableExits.push(exit);
-			}
-		}
-
-		for (const entrance of start.markers) {
-			availableEntrances.push([startRoot.map, entrance]);
-		}
-
-		while (areaRoots.length > 0) {
-			const nextRoot = areaRoots.pop();
-			const next = this._findSubarea(nextRoot.map, nextRoot.marker);
-			const exit = this._randomElement(next.exits.filter(e => e.length === 2));
-			const targetExit = this._randomElement(availableExits.filter(e => e.length === 2));
-
-			const entrance = this.edges[exit[0]][exit[1]];
-			const targetEntrance = this.edges[targetExit[0]][targetExit[1]];
-			
-			maps[exit[0]] = maps[exit[0]] || {};
-			maps[targetExit[0]] = maps[targetExit[0]] || {};
-
-			maps[exit[0]][exit[1]] = targetEntrance;
-			maps[targetExit[0]][targetExit[1]] = entrance;
-
-			console.log('connected ' + entrance.map + '/' + entrance.marker + ' to ' + targetEntrance.map + '/' + targetEntrance.marker);
-
-			availableExits.splice(availableExits.indexOf(targetExit), 1);
-			availableEntrances.splice(availableEntrances.findIndex(e => e[0] === entrance), 1);
-
-			for (const e of next.exits) {
-				const toFlags = e.slice(2);
-				if (e !== exit && (toFlags.length === 0 || (toFlags.length === 1 && toFlags[0] === 'maybe'))) {
-					availableExits.push(e);
-				}
-			}
-	
-			for (const e of next.markers) {
-				if (e !== entrance.marker) {
-					availableEntrances.push([startRoot.map, e]);
-				}
-			}
-		}
-
-		while (availableExits.filter(e => e.length === 2).length > 1 && availableEntrances.length > 0) {
-			const exit = this._randomElement(availableExits.filter(e => e.length === 2));
-			const targetExit = this._randomElement(availableExits.filter(e => e.length === 2 && e !== exit));
-
-			const entrance = this.edges[exit[0]][exit[1]];
-			const targetEntrance = this.edges[targetExit[0]][targetExit[1]];
-			
-			maps[exit[0]] = maps[exit[0]] || {};
-			maps[targetExit[0]] = maps[targetExit[0]] || {};
-
-			maps[exit[0]][exit[1]] = targetEntrance;
-			maps[targetExit[0]][targetExit[1]] = entrance;
-
-			console.log('connected ' + entrance.map + '/' + entrance.marker + ' to ' + targetEntrance.map + '/' + targetEntrance.marker);
-
-			availableExits.splice(availableExits.indexOf(targetExit), 1);
-			availableEntrances.splice(availableEntrances.findIndex(e => e[0] === entrance), 1);
-		}
-
-		while (availableExits.length > 1 && availableEntrances.length > 0) {
-			const exit = this._randomElement(availableExits);
-			const targetExit = this._randomElement(availableExits);
-
-			const entrance = this.edges[exit[0]][exit[1]];
-			const targetEntrance = this.edges[targetExit[0]][targetExit[1]];
-			
-			maps[exit[0]] = maps[exit[0]] || {};
-			maps[targetExit[0]] = maps[targetExit[0]] || {};
-
-			maps[exit[0]][exit[1]] = targetEntrance;
-			maps[targetExit[0]][targetExit[1]] = entrance;
-
-			console.log('connected ' + entrance.map + '/' + entrance.marker + ' to ' + targetEntrance.map + '/' + targetEntrance.marker);
-
-			availableExits.splice(availableExits.indexOf(targetExit), 1);
-			availableEntrances.splice(availableEntrances.findIndex(e => e[0] === entrance), 1);
-		}
-
-
-		return {startRoot, maps};
-	}
-	
-	_findSubarea(map, marker) {
-		return this.mapData[map].connections.find(c => c.markers.includes(marker));
-	}
-
-
-	/**
-	 * @param {Edges} assignments 
-	 * @param {string} map 
-	 * @param {string} marker
-	 * @returns {{map: string, marker: string}[]}
-	 */
-	_emptyEntrances(assignments, map, marker) {
-		const markers = Object.values(assignments).flatMap(a => Object.values(a)).filter(m => m.map === map).map(m => m.marker);
-
-		const data = this.mapData[map];
-		const result = [];
-		for (const connection of data.connections) {
-			if (connection.markers.includes(marker)) {
-				for (const marker of connection.markers) {
-					if (!markers.includes(marker)) {
-						result.push({map, marker});
-					}
-				}
-			}
-		}
-		return this._shuffle(result);
-	}
-
-	_random(min, max) {
-		min = Math.ceil(min);
-		max = Math.floor(max);
-		return Math.floor(Math.random() * (max - min)) + min;
-	}
-	
-	/**
-	 * @template T
-	 * @param {T[]} array 
-	 * @returns {T}
-	 */
-	_randomElement(array) {
-		return array[this._random(0, array.length)];
-	}
-
-	/**
-	 * @template T
-	 * @param {T[]} array 
-	 * @returns {T[]}
-	 */
-	_shuffle(array) {
-		const copy = [...array];
-		const result = [];
-		while (copy.length) {
-			const next = this._randomElement(copy);
-			result.push(next);
-			copy.splice(copy.indexOf(next), 1);
-		}
-		return result;
-	}
+    constructor(mapData, edges) {
+        this.mapData = mapData;
+        this.edges = edges;
+        this.backEdges = {};
+        this.area = {};
+        this.openSpots = [{ x: 0, y: 0 }];
+        this.openMaps = [];
+        this.reusableMaps = [];
+    }
+    generate() {
+        var _a, _b;
+        var _c;
+        this.extractBackEdges();
+        let success = false;
+        let maps = {};
+        for (let tries = 0; tries < 100 && !success; tries++) {
+            this.area = {};
+            this.openSpots = [{ x: 0, y: 0 }];
+            this.openMaps = [];
+            this.reusableMaps = [];
+            this.extractOpenMaps();
+            const min = this.openMaps.length - this.reusableMaps.length;
+            while (this.openSpots.length > 0) {
+                this.buildRoom();
+            }
+            maps = {};
+            let count = 0;
+            for (const y of Object.keys(this.area)) {
+                for (const x of Object.keys(this.area[+y])) {
+                    count++;
+                    const meta = this.area[+y][+x];
+                    for (const exit of meta.exits) {
+                        const original = this.edges[exit.name.map].markers[exit.name.marker].to;
+                        if (original) {
+                            (_a = maps[_c = original.map]) !== null && _a !== void 0 ? _a : (maps[_c] = {});
+                            maps[original.map][original.marker] = (_b = exit.to) !== null && _b !== void 0 ? _b : exit.name;
+                        }
+                    }
+                }
+            }
+            if (count >= min) {
+                console.log(this.area);
+                console.log(tries);
+                success = true;
+            }
+            tries++;
+        }
+        return { startRoot: this.area[0][0].exits[0].name, maps };
+    }
+    extractBackEdges() {
+        var _a;
+        var _b;
+        for (const map of Object.keys(this.edges)) {
+            for (const marker of Object.keys(this.edges[map].markers)) {
+                const data = this.edges[map].markers[marker];
+                if (data.to) {
+                    (_a = (_b = this.backEdges)[map]) !== null && _a !== void 0 ? _a : (_b[map] = {});
+                    this.backEdges[map][marker] = {
+                        to: data.to,
+                        dir: this.reverseDir(data.dir)
+                    };
+                }
+            }
+        }
+    }
+    reverseDir(dir) {
+        switch (dir) {
+            case Direction.NORTH: return Direction.SOUTH;
+            case Direction.EAST: return Direction.WEST;
+            case Direction.SOUTH: return Direction.NORTH;
+            case Direction.WEST: return Direction.EAST;
+        }
+    }
+    extractOpenMaps() {
+        for (const mapName of Object.keys(this.mapData)) {
+            const mapData = this.mapData[mapName];
+            for (const connection of mapData.connections) {
+                const connMeta = {
+                    reusable: !!connection.reusable,
+                    chests: connection.chests,
+                    from: connection.markers.map(marker => ({
+                        dir: this.edges[mapName].markers[marker].dir,
+                        marker: {
+                            map: mapName,
+                            marker,
+                        },
+                        tags: []
+                    })),
+                    to: connection.exits
+                        .filter(([, , ...tags]) => tags.length === 0)
+                        .map(([map, marker, ...tags]) => ({
+                        dir: this.backEdges[map][marker].dir,
+                        marker: {
+                            map,
+                            marker,
+                        },
+                        tags,
+                    }))
+                };
+                if (connection.reusable) {
+                    this.reusableMaps.push(connMeta);
+                }
+                this.openMaps.push(connMeta);
+            }
+        }
+    }
+    buildRoom() {
+        var _a, _b, _c, _d, _e;
+        var _f, _g;
+        const position = this.openSpots.pop();
+        if (!position) {
+            return false;
+        }
+        const conn = this.findFiting(position);
+        if (!conn) {
+            return false;
+        }
+        const name = conn.from[0].marker.map;
+        for (let i = 0; i < this.openMaps.length; i++) {
+            if (this.openMaps[i].from[0].marker.map === name) {
+                this.openMaps.splice(i, 1);
+                i--;
+            }
+        }
+        const mapMeta = {
+            name,
+            disabledEvents: this.mapData[name].disabledEvents,
+            exits: [...conn.to
+                    .map(c => { var _a; return (_a = this.backEdges[c.marker.map][c.marker.marker].to) === null || _a === void 0 ? void 0 : _a.marker; })
+                    .filter((marker, index, array) => !!marker && array.indexOf(marker) === index)
+                    .map(marker => ({
+                    dir: this.edges[name].markers[marker].dir,
+                    name: {
+                        map: name,
+                        marker
+                    },
+                    to: undefined
+                }))
+                //TODO: conn.from
+            ]
+        };
+        (_a = (_f = this.area)[_g = position.y]) !== null && _a !== void 0 ? _a : (_f[_g] = {});
+        this.area[position.y][position.x] = mapMeta;
+        this.connect(mapMeta, Direction.NORTH, (_b = this.area[position.y - 1]) === null || _b === void 0 ? void 0 : _b[position.x], Direction.SOUTH);
+        this.connect(mapMeta, Direction.EAST, (_c = this.area[position.y]) === null || _c === void 0 ? void 0 : _c[position.x + 1], Direction.WEST);
+        this.connect(mapMeta, Direction.SOUTH, (_d = this.area[position.y + 1]) === null || _d === void 0 ? void 0 : _d[position.x], Direction.NORTH);
+        this.connect(mapMeta, Direction.WEST, (_e = this.area[position.y]) === null || _e === void 0 ? void 0 : _e[position.x - 1], Direction.EAST);
+        this.mark(conn, Direction.NORTH, { y: position.y - 1, x: position.x });
+        this.mark(conn, Direction.EAST, { y: position.y, x: position.x + 1 });
+        this.mark(conn, Direction.SOUTH, { y: position.y + 1, x: position.x });
+        this.mark(conn, Direction.WEST, { y: position.y, x: position.x - 1 });
+        return true;
+    }
+    connect(a, aDir, b, bDir) {
+        if (!b || !bDir) {
+            return;
+        }
+        const entrances = b.exits.filter(e => e.dir === bDir && !e.to);
+        for (const exit of a.exits) {
+            if (exit.dir !== aDir || exit.to) {
+                continue;
+            }
+            const to = entrances.pop();
+            if (!to) {
+                throw new Error('No exits left to connect');
+            }
+            exit.to = to.name;
+            to.to = exit.name;
+        }
+    }
+    mark(conn, dir, pos) {
+        var _a;
+        if (conn.to.some(m => m.dir === dir)) {
+            if (!((_a = this.area[pos.y]) === null || _a === void 0 ? void 0 : _a[pos.x])) {
+                if (this.openSpots.every(s => s.x !== pos.x || s.y !== pos.y)) {
+                    this.openSpots.push(pos);
+                }
+            }
+        }
+    }
+    findFiting(position) {
+        const fittingOpenNonReusable = this.openMaps.filter(c => !c.reusable && this.roomFits(c, position));
+        if (fittingOpenNonReusable.length) {
+            return Random.randomMember(fittingOpenNonReusable);
+        }
+        const fittingOpenReusable = this.openMaps.filter(c => c.reusable && this.roomFits(c, position));
+        if (fittingOpenReusable.length) {
+            return Random.randomMember(fittingOpenReusable);
+        }
+        const fittingReusableOne = this.reusableMaps.filter(c => c.to.length === 1 && this.roomFits(c, position));
+        if (fittingReusableOne.length) {
+            return Random.randomMember(fittingReusableOne);
+        }
+        const fittingReusableTwo = this.reusableMaps.filter(c => this.roomFits(c, position));
+        if (fittingReusableTwo.length) {
+            return Random.randomMember(fittingReusableTwo);
+        }
+        return null;
+    }
+    roomFits(conn, position) {
+        var _a, _b, _c, _d;
+        const result = this.roomFitsTo(conn, Direction.NORTH, (_a = this.area[position.y - 1]) === null || _a === void 0 ? void 0 : _a[position.x], Direction.SOUTH)
+            && this.roomFitsTo(conn, Direction.EAST, (_b = this.area[position.y]) === null || _b === void 0 ? void 0 : _b[position.x + 1], Direction.WEST)
+            && this.roomFitsTo(conn, Direction.SOUTH, (_c = this.area[position.y + 1]) === null || _c === void 0 ? void 0 : _c[position.x], Direction.NORTH)
+            && this.roomFitsTo(conn, Direction.WEST, (_d = this.area[position.y]) === null || _d === void 0 ? void 0 : _d[position.x - 1], Direction.EAST);
+        return result;
+    }
+    roomFitsTo(conn, connDir, map, mapDir) {
+        if (!map || !mapDir) {
+            return true;
+        }
+        const connCount = Math.max(
+        //TODO: conn.from.filter(c => c.dir === connDir).length,
+        conn.to.filter(c => c.dir === connDir).length);
+        const mapCount = map.exits.filter(e => e.dir === mapDir && !e.to).length;
+        return connCount === mapCount;
+    }
 }

@@ -9,6 +9,14 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.30.0"
+    "@types/node": "^18.15.5",
+    "@types/seedrandom": "^3.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.30.0",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "seedrandom": "^3.0.5"
   }
 }

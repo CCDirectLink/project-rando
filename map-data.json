@@ -2,6 +2,7 @@
     "autumn.entrance": {
         "disabledEvents": ["EndScene"],
         "connections": [{
+            "reusable": true,
             "markers": ["left", "right"],
             "exits": [
                 ["autumn.path-1", "right"],
@@ -50,6 +51,7 @@
     "autumn.path-1-3": {
         "disabledEvents": [],
         "connections": [{
+            "reusable": true,
             "markers": ["right"],
             "exits": [
                 ["autumn.path-1-2", "left"]
@@ -146,13 +148,15 @@
     "autumn.path-7-1": {
         "disabledEvents": [],
         "connections": [{
+            "reusable": true,
             "markers": ["east", "top"],
             "exits": [
                 ["autumn.path-7-2", "bottom"],
                 ["autumn.path6", "west"]
             ],
             "chests": []
-        }, {
+        }],
+        "tmpConnections": [{
             "markers": ["top-2"],
             "exits": [
                 ["autumn.path-7-2", "bottom"],
@@ -170,7 +174,7 @@
                 ["autumn.path-7-2", "bottom-3", "maybe"]
             ],
             "chests": [{"id": 283, "tags": ["maybe", "JADC"]}, {"id": 284, "tags": ["maybe"]}, {"id": 1128, "tags": ["maybe", "JADC"]}]
-        }] 
+        }]
     },
     "autumn.path-7-2": {
         "disabledEvents": [],
@@ -196,6 +200,7 @@
     "autumn.path-8": {
         "disabledEvents": [],
         "connections": [{
+            "reusable": true,
             "markers": ["bottom", "top"],
             "exits": [
                 ["bergen-trail.path-1-entrance", "south-exit_autumn", "disabled"],
@@ -217,6 +222,7 @@
     "autumn.cubaum": {
         "disabledEvents": [],
         "connections": [{
+            "reusable": true,
             "markers": ["down"],
             "exits": [
                 ["autumn.path-1", "up"]
@@ -234,7 +240,7 @@
             "chests": [329]
         }] 
     },
-    "autumn.cave-3-to-6": {
+    "autumn.caves.cave-3-to-6": {
         "disabledEvents": [],
         "connections": [{
             "markers": ["left"],
