@@ -4,7 +4,7 @@
   "description": "",
   "main": "extract-connections.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild --bundle --sourcemap=inline --outfile=dist/plugin.js --target=es2018 --format=esm plugin.ts"
   },
   "author": "",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "@types/seedrandom": "^3.0.5",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
+    "esbuild": "^0.17.12",
     "eslint": "^8.30.0",
     "typescript": "^5.0.2"
   },

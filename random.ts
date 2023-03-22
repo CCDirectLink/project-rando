@@ -1,10 +1,12 @@
 import type seedrandomtypes from 'seedrandom';
 
+import seedrandom from 'seedrandom';
+
 export class Random {
 	private static random = Math.random;
-	private static seedrandom: typeof seedrandomtypes;
+	private static seedrandom: typeof seedrandomtypes = seedrandom;
 	public static init(baseDir: string) {
-		Random.seedrandom = require(process.cwd() + '/' + baseDir + 'node_modules/seedrandom/index.js');
+		// Random.seedrandom = require(process.cwd() + '/' + baseDir + 'node_modules/seedrandom/index.js');
 	}
 	public static seed(seed: string) {
 		Random.random = Random.seedrandom(seed);

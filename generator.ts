@@ -130,7 +130,7 @@ export class Generator {
 			}
 			tries++;
 		}
-		return {startRoot: this.area[0][0].exits[0].name, maps};
+		return {startRoot: this.area[0][0].exits[0].name, maps, backEdges: this.backEdges};
 	}
 
 	private extractBackEdges() {
