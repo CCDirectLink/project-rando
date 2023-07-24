@@ -25,24 +25,18 @@ interface Chest {
 	id: number,
 	tags: string[]
 }
-
-interface ConnectionId {
-	map: string,
-	id: number;
-}
-
 type Edges = Record<string, EdgesEntry>;
 
 interface EdgesEntry {
 	markers: Record<string, EdgeMarker>;
 }
 
-interface EdgeMarker {
+export interface EdgeMarker {
 	to?: MapMarker;
 	dir: Direction;
 }
 
-interface MapMarker {
+export interface MapMarker {
 	map: string;
 	marker: string;
 }
@@ -60,7 +54,7 @@ interface MarkerMeta {
 	tags: string[];
 }
 
-interface MapMeta {
+export interface MapMeta {
 	name: string;
 	exits: ExitMeta[];
 	disabledEvents: string[];
@@ -72,7 +66,7 @@ interface ExitMeta {
 	to?: MapMarker;
 }
 
-interface Vec2 {
+export interface Vec2 {
 	x: number;
 	y: number;
 }
@@ -93,7 +87,6 @@ export class Generator {
 		this.extractBackEdges();
 		
 		let success = false;
-		let maps: Record<string, Record<string, MapMarker>> = {};
 		for (let tries = 0; tries < 100 && !success; tries++) {
 			this.area = {};
 			this.openSpots = [{x: 0, y: 0}];
@@ -107,20 +100,9 @@ export class Generator {
 				this.buildRoom();
 			}
 	
-			maps = {};
 			let count = 0;
 			for (const y of Object.keys(this.area)) {
-				for (const x of Object.keys(this.area[+y])) {
-					count++;
-					const meta = this.area[+y][+x];
-					for (const exit of meta.exits) {
-						const original = this.edges[exit.name.map].markers[exit.name.marker].to;
-						if (original) {
-							maps[original.map] ??= {};
-							maps[original.map][original.marker] = exit.to ?? exit.name;
-						}
-					}
-				}
+				count += Object.keys(this.area[+y]).length;
 			}
 	
 			if (count >= min) {
@@ -130,7 +112,7 @@ export class Generator {
 			}
 			tries++;
 		}
-		return {startRoot: this.area[0][0].exits[0].name, maps, backEdges: this.backEdges};
+		return {startRoot: this.area[0][0].exits[0].name, maps: this.area, backEdges: this.backEdges};
 	}
 
 	private extractBackEdges() {

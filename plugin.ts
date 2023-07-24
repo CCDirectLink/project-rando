@@ -24,9 +24,7 @@ export default class ProjectRedo {
 		const generator = new Generator(data, edges);
 		const {startRoot, maps, backEdges} = generator.generate();
 		console.log({startRoot, maps});
-		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-		//@ts-ignore
-		(/** @type {any} */globalThis).ig.Game.inject({
+		(globalThis as any).ig.Game.inject({
 			teleport(mapName: string | number, marker: { marker: string | number; }, hint: any, clearCache: any, reloadCache: any) {
 				console.log('teleporting', mapName, marker && marker.marker, hint, clearCache, reloadCache);
 				if (maps[mapName] && marker && maps[mapName][marker.marker]) {
@@ -48,6 +46,23 @@ export default class ProjectRedo {
 				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 				//@ts-ignore
 				return this.parent(startRoot.map, new (/** @type {any} */globalThis).ig.TeleportPosition(startRoot.marker), hint, clearCache, reloadCache);
+			},
+
+			preloadLevel(mapName: string) {
+				return this.parent(mapName);
+			},
+
+			loadLevel(levelData: any, clearCache: boolean, reloadCache: boolean) {
+				return this.parent(levelData, clearCache, reloadCache);
+			}
+		});
+
+		(globalThis as any).sc.AreaLoadable.inject({
+			init(name: string) {
+				this.parent(name);
+			},
+			loadInternal(name: string) {
+				this.parent(name);
 			}
 		});
 	}
